@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+
+  <meta name="autor" content="EleazarDevTech">
+  <link rel="icon" href="../html.ico" type="image/x-icon">
+  
+  <hr />
+  <h1>Ejercicios Modulo 1: HTML</h1>
+  <hr />
+
+ <title>Clase 13.2 - Imagen adaptable a la pantalla</title>
+  <meta name="description" content="Crea una web que contenga formularios">
+</head>
+
+<body>
+  <h2>Clase 13.2 - Imagen adaptable con &lt;picture></h2>
+  <figure>
+    <figcaption>Muestra imagen random adaptándose al espacio de la pantalla</figcaption> <br>    
+    <picture>
+      <source srcset="https://picsum.photos/1850/720?random=1" media="(min-width:1900px)" >
+      <source srcset="https://picsum.photos/1800/720?random=1" media="(min-width:1850px)">
+      <source srcset="https://picsum.photos/1600/720?random=1" media="(min-width:1650px)">
+      <source srcset="https://picsum.photos/1400/720?random=1" media="(min-width:1450px)">
+      <source srcset="https://picsum.photos/1300/720?random=1" media="(min-width:1350px)">
+      <source srcset="https://picsum.photos/1200/720?random=1" media="(min-width:1250px)">
+      <source srcset="https://picsum.photos/1080/720?random=1" media="(min-width:1100px)">
+      <source srcset="https://picsum.photos/900/720?random=1" media="(min-width:850px)">
+      <source srcset="https://picsum.photos/800/720?random=1" media="(min-width:850px)">
+      <source srcset="https://picsum.photos/600/720?random=1" media="(min-width:650px)">
+      <source srcset="https://picsum.photos/500/720?random=1" media="(min-width:550px)">
+      <source srcset="https://picsum.photos/400/720?random=1" media="(min-width:450px)">
+      <source srcset="https://picsum.photos/300/720?random=1" media="(min-width:350px)">
+      <img src="https://picsum.photos/200/200?random=1" alt="Responsive Image" >
+    </picture>
+  </figure>
+
+  <p><a href="13.index.html">👈Volver</a></p>
+</body>
+<footer>
+  <br>
+  <br>
+  <address>
+    <p>
+      <a href="https://github.com/EleazarDevTech" title="EleazarDevTech Github">
+        <img src="../../github.png" alt="GitHub" width="30" height="30"/>
+      - EleazarDevTech ~ GitHub </a> 
+    </p>
+  </address>
+  <aside>
+    © 2024 - Eleazar Hernández - Todos los derechos reservados
+  </aside>
+</footer>
+</html>
