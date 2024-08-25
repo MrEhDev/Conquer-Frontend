@@ -8,82 +8,85 @@
 
   <meta name="autor" content="EleazarDevTech">
   <link rel="icon" href="../html.ico" type="image/x-icon">
-  
-  <hr />
-  <h1>Ejercicios Modulo 1: HTML</h1>
-  <hr />
 
  <title>Formulario Rellena tu CV</title>
   <meta name="description" content="Crea una web con el formulario mostrado en imagen">
 </head>
 
-<main>
-  <h2>Ejercicio 12.3 - Rellena tu CV</h2>
-  <form action="" name="CV" method="get" autocomplete="off">
-    <fieldset>
-      <legend>Datos personales</legend>
-      <div>
-        Provincia <br>
-        <select name="provincia" id="prov">
-          <option value="-">- selecciona -</option>
-          <option value="al">Alicante</option>
-          <option value="ba">Barcelona</option>
-          <option value="gr">Granada</option>
-          <option value="ma">Madrid</option>
-            <option value="G">Granada</option>
-          <option value="se">Sevilla</option>
-          <option value="sc">S/C de Tenerife</option>
-        </select>
-      </div>
-      <p>
-        Fecha de nacimiento <br>
-        <input type="text" max="31" min="1" maxlength="2" size="2"> de 
-        <select name="provincia" id="prov">
-          <option value="-">- selecciona -</option>
-          <option value="1">Enero</option>
-          <option value="2">Febrero</option>
-          <option value="3">Marzo</option>
-          <option value="4">Abril</option>
-          <option value="5">Mayo</option>
-          <option value="6">Junio</option>
-          <option value="7">Julio</option>
-          <option value="8">Agosto</option>
-          <option value="9">Septiembre</option>
-          <option value="10">Octubre</option>
-          <option value="11">Noviembre</option>
-          <option value="12">Diciembre</option>
-        </select> de 
-        <input type="text" min="1900" maxlength="4" minlength="4" size="4">
-      </p>
-      <p>
-        <label for="temas">Temas de interés</label><br>
-        <select name="temas" id="temas" size="5" multiple>
-          <option value="administracion">Administración de bases de datos</option>
-          <option value="analisis">Análisis y programación</option>
-          <option value="arquitectura">Arquitectura</option>
-          <option value="calidad">Calidad</option>
-          <option value="erp">ERP</option>
-          <option value="crm">CRM</option>
-        </select>
-      </p>
-    
-    <button>Enviar</button>
-    </fieldset>
+<body>
+  <header>
+    <hr />
+    <h1>Ejercicios Modulo 1: HTML</h1>
+    <hr />
+    <h2>Ejercicio 12.3 - Rellena tu CV</h2>    
+  </header>
+  <main>
+    <form action="" name="CV" method="get" autocomplete="off">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <div>
+          Provincia <br>
+          <select name="provincia" id="prov">
+            <option value="-">- selecciona -</option>
+            <option value="al">Alicante</option>
+            <option value="ba">Barcelona</option>
+            <option value="gr">Granada</option>
+            <option value="ma">Madrid</option>
+              <option value="G">Granada</option>
+            <option value="se">Sevilla</option>
+            <option value="sc">S/C de Tenerife</option>
+          </select>
+        </div>
+        <p>
+          Fecha de nacimiento <br>
+          <input type="text" max="31" min="1" maxlength="2" size="2"> de 
+          <select name="provincia" id="prov">
+            <option value="-">- selecciona -</option>
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+          </select> de 
+          <input type="text" min="1900" maxlength="4" minlength="4" size="4">
+        </p>
+        <p>
+          <label for="temas">Temas de interés</label><br>
+          <select name="temas" id="temas" size="5" multiple>
+            <option value="administracion">Administración de bases de datos</option>
+            <option value="analisis">Análisis y programación</option>
+            <option value="arquitectura">Arquitectura</option>
+            <option value="calidad">Calidad</option>
+            <option value="erp">ERP</option>
+            <option value="crm">CRM</option>
+          </select>
+        </p>
+      
+      <button>Enviar</button>
+      </fieldset>
 
-  <p><a href="12.index.html">👈Atrás</a></p>
-</main>
-<footer>
-  <br>
-  <br>
-  <address>
-    <p>
-      <a href="https://github.com/EleazarDevTech" title="EleazarDevTech Github">
-        <img src="../../github.png" alt="GitHub" width="30" height="30"/>
-      - EleazarDevTech ~ GitHub </a> 
-    </p>
-  </address>
-  <aside>
-    © 2024 - Eleazar Hernández - Todos los derechos reservados
-  </aside>
-</footer>
+  <nav><a href="12.index.html">👈Atrás</a></nav>
+  </main>
+  <footer>
+    <br>
+    <br>
+    <address>
+      <p>
+        <a href="https://github.com/EleazarDevTech" title="EleazarDevTech Github">
+          <img src="../../github.png" alt="GitHub" width="30" height="30"/>
+        - EleazarDevTech ~ GitHub </a> 
+      </p>
+    </address>
+    <aside>
+      © 2024 - Eleazar Hernández - Todos los derechos reservados
+    </aside>
+  </footer>  
+</body>
 </html>

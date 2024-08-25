@@ -9,82 +9,82 @@
   <meta name="autor" content="EleazarDevTech">
   <link rel="icon" href="../html.ico" type="image/x-icon">
   
-  <hr />
-  <h1>Ejercicios Modulo 1: HTML</h1>
-  <hr />
-
  <title>Formulario de registro - Mi web</title>
   <meta name="description" content="Cra una página web que contenga un formulario con 
   los siguientes campos de información">
 </head>
+<body>
+  <header>
+    <hr />
+    <h1>Ejercicios Modulo 1: HTML</h1>
+    <hr />    
+    <h2>Ejercicio 12.1 - Formulario 1</h2>    
+  </header>
+  <main>
+    <form action="" name="formulario1" method="get" autocomplete="on">
+      <fieldset>
+        <legend>Formulario de registro</legend>
 
-<main>
-  <h2>Ejercicio 12.1 - Formulario 1</h2>
-  <form action="" name="formulario1" method="get" autocomplete="on">
-    <fieldset>
-      <legend>Formulario de registro</legend>
-
-      <p>
-        <label for="nombre"><strong>Nombre:</strong><br></label>
-        <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" maxlength="50" autocomplete="name">
-      </p>
-      <p>
-        <label for="apellido"><strong>Apellidos:</strong><br></label>
-        <input type="text" name="apellido" id="apellido" placeholder="Introduce tus apellidos" maxlength="50" autocomplete="family-name">
-      </p>
-      <p>
-        <strong>Sexo:</strong><br>
-        <input type="radio" name="sexo" value="hombre" id="hombre">
-        <label for="hombre">Hombre</label>
-        <input type="radio" name="sexo" value="mujer" id="mujer">
-        <label for="mujer">Mujer</label>
-      </p>
-      <p>
-        <label for="email"><strong>Email:</strong></label>
-        <input type="email" name="email" id="email" placeholder="Introduce tu email" autocomplete="email">
-      </p>
-  
-      <p>
-        <label for="poblacion">Selecciona tu población:</label>
-        <select name="Población" id="poblacion">
-          <option value="-">-</option>
-          <option value="al">Alicante</option>
-          <option value="ma">Madrid</option>
-          <option value="se">Sevilla</option>
-          <option value="va">Valencia</option>
-        </select>
-      </p>
-      <p>
-        <label for="description">Descripción:</label> <br>
-        <textarea name="description" id="description" placeholder="Introduce una breve descripción"></textarea>
-      </p>    
-      <p>
-      <input type="checkbox" name="ofertas" id="ofertas"> <label for="ofertas">Deseo recibir información sobre novedades y ofertas</label>
-      <br>
-      <input type="checkbox" name="condiciones" id="condiciones" required autocomplete="on" checked> <label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa
-        sobre protección de datos</label>
-      </p>
-      <p>
-        <button>Enviar</button>
-      </p>
-    </form>
-  </fieldset>
-  <br>
-  <br>
-  <p><a href="12.index.html">👈Atrás</a></p>
-</main>
-<footer>
-  <br>
-  <br>
-  <address>
-    <p>
-      <a href="https://github.com/EleazarDevTech" title="EleazarDevTech Github">
-        <img src="../../github.png" alt="GitHub" width="30" height="30"/>
-      - EleazarDevTech ~ GitHub </a> 
-    </p>
-  </address>
-  <aside>
-    © 2024 - Eleazar Hernández - Todos los derechos reservados
-  </aside>
-</footer>
+        <p>
+          <label for="nombre"><strong>Nombre:</strong><br></label>
+          <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" maxlength="50" autocomplete="name">
+        </p>
+        <p>
+          <label for="apellido"><strong>Apellidos:</strong><br></label>
+          <input type="text" name="apellido" id="apellido" placeholder="Introduce tus apellidos" maxlength="50" autocomplete="family-name">
+        </p>
+        <p>
+          <strong>Sexo:</strong><br>
+          <input type="radio" name="sexo" value="hombre" id="hombre">
+          <label for="hombre">Hombre</label>
+          <input type="radio" name="sexo" value="mujer" id="mujer">
+          <label for="mujer">Mujer</label>
+        </p>
+        <p>
+          <label for="email"><strong>Email:</strong></label>
+          <input type="email" name="email" id="email" placeholder="Introduce tu email" autocomplete="email">
+        </p>
+    
+        <p>
+          <label for="poblacion">Selecciona tu población:</label>
+          <select name="Población" id="poblacion">
+            <option value="-">-</option>
+            <option value="al">Alicante</option>
+            <option value="ma">Madrid</option>
+            <option value="se">Sevilla</option>
+            <option value="va">Valencia</option>
+          </select>
+        </p>
+        <p>
+          <label for="description">Descripción:</label> <br>
+          <textarea name="description" id="description" placeholder="Introduce una breve descripción"></textarea>
+        </p>    
+        <p>
+        <input type="checkbox" name="ofertas" id="ofertas"> <label for="ofertas">Deseo recibir información sobre novedades y ofertas</label>
+        <br>
+        <input type="checkbox" name="condiciones" id="condiciones" required autocomplete="on" checked> <label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa
+          sobre protección de datos</label>
+        </p>
+        <p>
+          <button>Enviar</button>
+        </p>
+      </form>
+    </fieldset>
+    <br>
+    <br>
+    <nav><a href="12.index.html">👈Atrás</a></nav>
+  </main>
+  <footer>
+    <br>
+    <br>
+    <address>
+        <a href="https://github.com/EleazarDevTech" title="EleazarDevTech Github">
+          <img src="../../github.png" alt="GitHub" width="30" height="30"/>
+        - EleazarDevTech ~ GitHub </a> 
+    </address>
+    <aside>
+      © 2024 - Eleazar Hernández - Todos los derechos reservados
+    </aside>
+  </footer>
+</body>
 </html>

@@ -8,74 +8,78 @@
 
   <meta name="autor" content="EleazarDevTech">
   <link rel="icon" href="../html.ico" type="image/x-icon">
-  
-  <hr />
-  <h1>Ejercicios Modulo 1: HTML</h1>
-  <hr />
 
   <title>Formulario Información sobre el producto</title>
   <meta name="description" content="Crea una web con el formulario mostrado en imagen">
 </head>
+<body>
+  <header>
+    <hr />
+    <h1>Ejercicios Modulo 1: HTML</h1>
+    <hr />
+    <h2>Ejercicio 12.4 - Información sobre el producto</h2>
+  </header>
 
-<main>
-  <h2>Ejercicio 12.4 - Información sobre el producto</h2>
-  <form action="12.index.html" name="producto" method="post" enctype="multipart/form-data" autocomplete="off">
-    <fieldset>
-      <legend>Datos básicos</legend>
-      <div>
-        <label for="name">Nombre</label>  <br>
-        <input type="text" id="name" name="name">
-      </div>
-      <p>
-        <label for="descr">Descripción</label> <br>
-        <textarea name="description" id="descr" cols="30" rows="5"></textarea>
-      </p>
-      <p>
-        <label for="foto">Foto</label>
-        <input type="file" id="foto" name="foto">
-      </p>
-      <div>
-        <input type="checkbox" id="check_count" name="check_count">
-        <label for="check_count">Añadir contador de visitas</label>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Datos económicos</legend>
-      <div>
-        <label for="price">Precio</label>
-        <input type="text" id="price" name="price" size="4"> €
-        &nbsp; &nbsp; &nbsp; <label for="impuesto"> Impuestos</label>
-        <select name="impuesto" id="impuesto">
-          <option value="4">4%</option>
-          <option value="7">7%</option>
-          <option value="16">16%</option>
-          <option value="25">25%</option>
-        </select>
-      </div>
-      <p>
-        Promoción <br>
-        <input type="radio" name="promo" value="-"> Ninguno <br>
-        <input type="radio" name="promo" value="trans"> Transporte gratuito <br>
-        <input type="radio" name="promo" value="5"> Descuento 5% <br>
-      </p>
-    </fieldset>
-<br>
-    <button>Añadir</button>
 
-  <p><a href="12.index.html">👈Atrás</a></p>
-</main>
-<footer>
+  <main>
+    <form action="12.index.html" name="producto" method="post" enctype="multipart/form-data" autocomplete="off">
+      <fieldset>
+        <legend>Datos básicos</legend>
+        <div>
+          <label for="name">Nombre</label>  <br>
+          <input type="text" id="name" name="name">
+        </div>
+        <p>
+          <label for="descr">Descripción</label> <br>
+          <textarea name="description" id="descr" cols="30" rows="5"></textarea>
+        </p>
+        <p>
+          <label for="foto">Foto</label>
+          <input type="file" id="foto" name="foto">
+        </p>
+        <div>
+          <input type="checkbox" id="check_count" name="check_count">
+          <label for="check_count">Añadir contador de visitas</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Datos económicos</legend>
+        <div>
+          <label for="price">Precio</label>
+          <input type="text" id="price" name="price" size="4"> €
+          &nbsp; &nbsp; &nbsp; <label for="impuesto"> Impuestos</label>
+          <select name="impuesto" id="impuesto">
+            <option value="4">4%</option>
+            <option value="7">7%</option>
+            <option value="16">16%</option>
+            <option value="25">25%</option>
+          </select>
+        </div>
+        <p>
+          Promoción <br>
+          <input type="radio" name="promo" value="-"> Ninguno <br>
+          <input type="radio" name="promo" value="trans"> Transporte gratuito <br>
+          <input type="radio" name="promo" value="5"> Descuento 5% <br>
+        </p>
+      </fieldset>
   <br>
-  <br>
-  <address>
-    <p>
-      <a href="https://github.com/EleazarDevTech" title="EleazarDevTech Github">
-        <img src="../../github.png" alt="GitHub" width="30" height="30"/>
-      - EleazarDevTech ~ GitHub </a> 
-    </p>
-  </address>
-  <aside>
-    © 2024 - Eleazar Hernández - Todos los derechos reservados
-  </aside>
-</footer>
+      <button>Añadir</button>
+  </main>
+  <nav><a href="12.index.html">👈Atrás</a></nav>
+
+  <footer>
+    <br>
+    <br>
+    <address>
+      <p>
+        <a href="https://github.com/EleazarDevTech" title="EleazarDevTech Github">
+          <img src="../../github.png" alt="GitHub" width="30" height="30"/>
+        - EleazarDevTech ~ GitHub </a> 
+      </p>
+    </address>
+    <aside>
+      © 2024 - Eleazar Hernández - Todos los derechos reservados
+    </aside>
+  </footer>
+</body>  
 </html>

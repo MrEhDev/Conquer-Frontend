@@ -16,29 +16,35 @@
 </head>
 
 <body>
+  <header>
     <h1>Clase 5 - Ejemplos de &lt;a&gt; - Texto en HTML</h1>
-    <hr />
-    <p>En el código fuente HTML los enlaces se identifican mediante la etiqueta &lta> 
-      y su atributo href, que contiene el URL del destino al que conduce el enlace.</p>
-    <p>La sintaxis mínima sería &lt;a href="URL">Nombre del enlace &lt;/a></p>
-    <h3>Algunos ejemplos:</h3>
-    <ul>
-        <p>Enlace normal, abrirá en la misma pestaña:</p>
-        <li><a href="https://github.com/EleazarDevTech">EleazarDevTech</a></li>
-        <p>Si añadimos <code>target="_blank"</code> dentro de la etiqueta, el enlace se abrirá en una nueva pestaña </p>
-        <li><a href="https://www.conquerblocks.com/" target="_blank">Conquer Blocks</a></li>
-        <p>Podemos enlazar archivos como por ejemplo pdfs, mediante enlaces relativos<br />
-        en este caso podemos añadir el atributo <code>download="Nombre con el que queremos que lo descargue"</code><br />
-        o incluso <code>hreflang="idioma"</code> para indicar el idioma del archivo</p>
-        <li><a href="./clase5_diapositivas.pdf" download="Diapositivas Clase 5">Diapositivas de la clase 5</a></li>
-    </ul>
-  <br>
-  <br>
-  <p><a href="5.2.index.html">👈 Volver atrás</a></p>
-  <script src="js/vendor/modernizr-3.12.0.min.js"></script>
-  <script src="js/app.js"></script>
+    <hr />    
+  </header>
+  <main>
+    <section>
+      <p>En el código fuente HTML los enlaces se identifican mediante la etiqueta &lta> 
+        y su atributo href, que contiene el URL del destino al que conduce el enlace.</p>
+      <p>La sintaxis mínima sería &lt;a href="URL">Nombre del enlace &lt;/a></p>
+    </section>
+    <section>
+      <h3>Algunos ejemplos:</h3>
+      <ul>
+          <p>Enlace normal, abrirá en la misma pestaña:</p>
+          <li><a href="https://github.com/EleazarDevTech">EleazarDevTech</a></li>
+          <p>Si añadimos <code>target="_blank"</code> dentro de la etiqueta, el enlace se abrirá en una nueva pestaña </p>
+          <li><a href="https://www.conquerblocks.com/" target="_blank">Conquer Blocks</a></li>
+          <p>Podemos enlazar archivos como por ejemplo pdfs, mediante enlaces relativos<br />
+          en este caso podemos añadir el atributo <code>download="Nombre con el que queremos que lo descargue"</code><br />
+          o incluso <code>hreflang="idioma"</code> para indicar el idioma del archivo</p>
+          <li><a href="./clase5_diapositivas.pdf" download="Diapositivas Clase 5">Diapositivas de la clase 5</a></li>
+      </ul>
+    </section>
+  </main>
 
-</body>
+  <br>
+  <br>
+  <nav><a href="5.2.index.html">👈 Volver atrás</a></nav>
+
 <footer>
   <br>
   <br>
@@ -53,4 +59,5 @@
     © 2024 - Eleazar Hernández - Todos los derechos reservados
   </aside>
 </footer>
+</body>
 </html>
