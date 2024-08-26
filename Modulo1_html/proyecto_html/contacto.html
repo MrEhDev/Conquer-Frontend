@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contacto ConquerDevs</title>
+  <meta name="description" content="Ponte en contacto con nosotros">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link  rel= "apple-touch-icon"  tamaños= "57x57"  href= "icons/apple-icon-57x57.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "60x60"  href= "icons/apple-icon-60x60.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "72x72"  href= "icons/apple-icon-72x72.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "76x76"  href= "icons/apple-icon-76x76.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "114x114"  href= "icons/apple-icon-114x114.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "120x120"  href= "icons/apple-icon-120x120.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "144x144"  href= "icons/apple-icon-144x144.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "152x152"  href= "icons/apple-icon-152x152.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "180x180"  href= "icons/apple-icon-180x180.png" > 
+  <link  rel= "icon"  tipo= "image/png"  tamaños= "192x192"   href= "icons/android-icon-192x192.png" > 
+  <link  rel= "icon"  tipo= "image/png"  tamaños= "32x32"  href= "icons/favicon-32x32.png" > 
+  <link  rel= "icono"  tipo= "imagen/png"  tamaños= "96x96"  href= "icons/favicon-96x96.png" > 
+  <link  rel= "icono"  tipo= "imagen/png"  tamaños= "16x16"  href= "icons/favicon-16x16.png" > 
+  <link  rel= "manifiesto"  href= "/manifiesto.json" > 
+  <meta  nombre= "msapplication-TileColor"  contenido= "#fafafa" > 
+  <meta  nombre= "msapplication-TileImage"  contenido= "icons/ms-icon-144x144.png" > 
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <center>
+      <div class="container">
+          <hr>
+          <picture>
+            <source srcset="img/common/conquer_devs_mob.png" height="120px" media="(max-width:600px)">
+             <img src="img/common/conquer_devs.png" alt="Conquer Devs Logo" height="78px">
+          </picture>
+          <nav>
+                | <a href="index.html">Home</a> |
+                | <a href="quienes_somos.html">Quiénes Somos</a> |
+                | <a href="cursos.html">Cursos</a> |
+                | <a href="blogs.html">Blogs</a> |
+                | <a href="registro.html">Registro</a> |
+                | <a href="login.html">Login</a> |
+                | <strong>Contacto</strong> |
+              </ul>
+          </nav>
+          <hr>
+      </div>
+      <h1>Contactos</h1>         
+    </center>
+  </header>
+  <main>
+    <address>
+    <center><button onClick="document.getElementById('formulario').open = true">Contacta con nosotros</button></center>
+    <dialog id="formulario">
+        <form action="#" name="contacto">
+          <fieldset>
+            <legend><h2>Formulario de contacto</h2></legend>
+              <label for="name">Nombre: </label><input type="text" id="name" required autocomplete="name"><br>
+              <label for="email">Email: </label><input type="text" id="email" required autocomplete="email"><br>
+              <label for="consulta">Consulta:</label><br>
+              <textarea name="consulta" id="consulta" placeholder="Escribe aquí tu consulta" cols="30" rows="4"></textarea> <br>
+              <input type="reset" value="Reiniciar formulario"> <button>Enviar</button> 
+          </fieldset>
+        </form>
+      <center><button onClick="document.getElementById('formulario').close()">Cerrar</button></center>
+    </dialog>
+    </address>
+    <br>
+    <section>
+      <center>
+        <h2>Donde encontrarnos</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95780.47786849295!2d2.057787474980145!3d41.392767343426364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!5e0!3m2!1ses!2ses!4v1724687322799!5m2!1ses!2ses" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+      </center>      
+    </section>
+  </main>
+  <footer>
+    <center>
+      <div class="container">
+          <p>&copy; 2024 Conquer Devs. Todos los derechos reservados.
+            <img src="icons/icon.png" alt="Conquer Devs Icon" height="22">
+          </p>
+          <nav>
+            <a href="aviso-legal.html">Aviso Legal</a>
+          </nav>
+      </div>      
+    </center>
+  </footer>
+</body>
+</html>
