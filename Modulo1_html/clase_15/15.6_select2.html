@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+
+  <meta name="autor" content="EleazarDevTech">
+  <link rel="icon" href="../html.ico" type="image/x-icon">
+  
+
+
+ <title>Clase 15 - Select2</title>
+  <meta name="description" content="Etiqueta interactiva - Select2">
+  
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <hr>
+    <h1>Ejercicios Modulo 1: HTML</h1>
+    <hr>
+    <h2>Clase 15 - Select2</h2>
+    <h2>&lt;Select2></h2>
+  </header>
+  <main>
+    <p>
+      Selecciona tu lenguaje favorito:
+      <select name="" id="weblangs">
+        <option value="">-</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">Javascript</option>
+      </select>
+    </p>
+  </main>
+  <br>
+  <nav><a href="15.index.html">👈Inicio</a></nav>
+
+  <footer>
+    <br>
+    <address>
+      <p>
+        <a href="https://github.com/EleazarDevTech" title="EleazarDevTech Github">
+          <img src="../../github.png" alt="GitHub" width="30" height="30"/>
+        - EleazarDevTech ~ GitHub </a> 
+      </p>
+    </address>
+    <aside>
+      © 2024 - Eleazar Hernández - Todos los derechos reservados
+    </aside>
+  </footer>
+  <script>
+    $(document).ready(function () {
+      $('#weblangs').select2();
+    });
+  </script>
+</body>
+</html>

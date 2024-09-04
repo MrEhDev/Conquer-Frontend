@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+
+  <meta name="autor" content="EleazarDevTech">
+  <link rel="icon" href="../html.ico" type="image/x-icon">
+  
+  
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/38.0.1/classic/ckeditor.js"></script>
+
+
+ <title>Clase 15 - ckeditor</title>
+  <meta name="description" content="Etiqueta interactiva - ckeditor">
+</head>
+
+<body>
+  <header>
+    <hr>
+    <h1>Ejercicios Modulo 1: HTML</h1>
+    <hr>
+    <h2>Clase 15 - ckeditor</h2>
+    <h2>&lt;ckeditor></h2>
+  </header>
+  <main>
+    <p>Descripción<br>
+    <textarea name="" id="description" cols="50" rows="10"></textarea></p>
+  </main>
+  <br>
+  <nav><a href="15.index.html">👈Inicio</a></nav>
+
+  <footer>
+    <br>
+    <address>
+      <p>
+        <a href="https://github.com/EleazarDevTech" title="EleazarDevTech Github">
+          <img src="../../github.png" alt="GitHub" width="30" height="30"/>
+        - EleazarDevTech ~ GitHub </a> 
+      </p>
+    </address>
+    <aside>
+      © 2024 - Eleazar Hernández - Todos los derechos reservados
+    </aside>
+  </footer>
+
+  <script>
+    ClassicEditor
+      .create(document.querySelector('#description'))
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
