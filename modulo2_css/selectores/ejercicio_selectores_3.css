@@ -1,0 +1,399 @@
+/*1. Selecciona los elementos div que sean hijos de otro div*/
+div > div{
+    color: #000;
+}
+/*2. Selecciona el último elemento de un grupo de elementos hermanos li*/
+li:last-child{
+    color: #000;
+}
+/*3. Selecciona los hijos pares de un elemento li*/
+li > :nth-child(2n){
+    color: #000;
+}
+/*4. Selecciona los hijos impares de un elemento li*/
+li > :nth-child(2n+1){
+    color: #000;
+}
+/*5. Selecciona los elementos p que sean hijos de article*/
+article > p{
+    color: #000;
+}
+/*6. Selecciona los p que estén dentro de un article*/
+article p{
+    color: #000;
+}
+/*7. Selecciona los títulos principal h1 y los h3*/
+h1, h3{
+    color: #000;
+}
+/*8. Selecciona los ol que estén dentro de body*/
+body ol{
+    color: #000;
+}
+/*9. Los elementos <ul> que sean hijos de <body>*/
+body > ul{
+    color: #000;
+}
+/*10.Los elementos <a> que sean hijos de <p>*/
+p > a{
+    color: #000;
+}
+/*11.Los elementos <div> que sean descendientes de <body>*/
+body div{
+    color: #000;
+}
+/*12.El primer hijo de body*/
+body > :first-child{
+    color: #000;
+}
+/*13.El último hijo de <ul>*/
+ul > :last-child{
+    color: #000;
+}
+/*14.El primer hijo de <ul>*/
+ul > :first-child{
+    color: #000;
+}
+/*15.Los elementos <li> pares de <ul>*/
+ul li:nth-child(2n), ul li:nth-of-type(2n){
+    color: #000;
+}
+/*16.Los elementos <li> impares de <ul>*/
+ul li:nth-child(2n+1), ul li:nth-of-type(2n+1){
+    color: #000;
+}
+/*17.El hijo de <ul> que esté en la posición 3*/
+ul > :nth-child(3){
+    color: #000;
+}
+/*18.Un párrafo con la identificación "platano".*/
+p#platano{
+    color: #000;
+}
+/*19.Un elemento con la clase "rojo" que sea primer hijo.*/
+.rojo:first-child{
+    color: #000;
+}
+/*20.Seleccionar los h2 dentro de un section*/
+section h2{
+    color: #000;
+}
+/*21.Seleccionar el segundo hijo de un elemento section*/
+section > :nth-child(2){
+    color: #000;
+}
+/*22.Seleccionar los hijos pares de un elemento ol*/
+ol > :nth-child(2n){
+    color: #000;
+}
+/*23.Seleccionar el antepenúltimo li de un ul de longitud indefinida*/
+ul li:nth-last-child(3){
+    color: #000;
+}
+/*24.Seleccionar los p, que tengan la clase verde y que sean hijos directos de un div*/
+div > p.verde{
+    color: #000;
+}
+/*25.Seleccionar los a que sean hijos de div y tengan un atributo class que contenga
+la palabra grande*/
+div > a[class*="grande"]{
+    color: #000;
+}
+/*26.Los button que sean hijos de un section*/
+section > button{
+    color: #000;
+}
+/*27.Los button que sean hijos únicos*/
+button:only-child{
+    color: #000;
+}
+/*28.Los span que sean primeros hijos de un p*/
+p > span:first-child{ /*REVISAR*/
+    color: #000;
+}
+/*29.Los input que vayan a continuación de un label y además sean hijos de un
+section*/
+section > label + input{
+    color: #000;
+}
+/*30.Los button que tengan como padre un div*/
+div > button{
+    color: #000;
+}
+/*31.Penúltimo hijo de body*/
+body > :nth-last-child(2){
+    color: #000;
+}
+/*32.Todos los label con el atributo for="mascota"*/
+label[for="mascota"]{
+    color: #000;
+}
+/*33.Todos los elementos "img" que tengan la clase "clasec", y que se encuentren
+dentro de cualquier elemento "div".*/
+div img.clasec{
+    color: #000;
+}
+/*34.Todos los enlaces dentro de párrafos.*/
+p a{
+    color: #000;
+}
+/*35.Todos los elementos que tengan la clase "Curvado".*/
+.Curvado{
+    color: #000;
+}
+/*36.Todos los elementos a y ol que tengan la clase "Recto".*/
+a.Recto, ol.Recto{
+    color: #000;
+}
+/*37.Todos los elementos "a" que se encuentren dentro de cualquier elemento "h2",
+que a su vez se encuentren dentro de cualquier elemento "div".*/
+div h2 a{
+    color: #000;
+}
+/*38.Todos los hijos de span que estén dentro de un p que estén dentro de un div.*/
+div p span > *{
+    color: #000;
+}
+/*39.Todos los elementos "p" y todos los elementos con atributo class="aviso" que
+estén dentro de div.*/
+p, div > .aviso{
+    color: #000;
+}
+/*40.Los elementos "em" y "a" que sean hijos directos de elementos "p", cuyo id sea
+"Sons".*/
+p#Sons > em, p#Sons > a{
+    color: #000;
+}
+/*41.Todos los elementos a contenidos en .basico*/
+.basico a{
+    color: #000;
+}
+/*42. Todos los "h2" dentro de una clase .lolito*/
+.lolito h2{
+    color: #000;
+}
+/*43. Todos los elementos dentro de un <p>*/
+p *{
+    color: #000;
+}
+/*44. El selector que está dentro de un párrafo que a su vez está dentro de un div*/
+div p select{
+    color: #000;
+}
+/*45.Seleccionar un <span> que sea hijo directo de un <p>*/
+p > span{
+    color: #000;
+}
+/*46.Seleccionar un <li> dentro de un <p> dentro de un <h1>*/
+h1 p li{
+    color: #000;
+}
+/*47.Seleccionar todos los <div> que tienen la clase .transbox*/
+div.transbox{
+    color: #000;
+}
+/*48.Todos los <p> que están dentro de cualquier <h1>*/
+h1 p{
+    color: #000;
+}
+/*49.Todos los <li>*/
+li{
+    color: #000;
+}
+/*50.Todos los <p> que son hijos de un <h2>*/
+h2 > p{
+    color: #000;
+}
+/*51.Todos los párrafos dentro de un div.*/
+div p{
+    color: #000;
+}
+/*52.Todos los elementos a de la pagina*/
+a{
+    color: #000;
+}
+/*53. Todos los elementos dentro de la clase .libreConf*/
+.libreConf *{
+    color: #000;
+}
+/*54.todos los p dentro de la clase .libreConf*/
+.libreConf p{
+    color: #000;
+}
+/*55.todos los p dentro de h2 dentro de div*/
+div h2 p{
+    color: #000;
+}
+/*56.todos los p contenidos en el id prueba1*/
+#prueba1 p{
+    color: #000;
+}
+/*57.todos los a que sean hijos de un p y que a su vez se encuentren dentro de un
+div*/
+div p > a{
+    color: #000;
+}
+/*58.todos los h1, h2 y h3 que tengan la clase .libreConf*/
+h1.libreConf, h2.libreConf, h3.libreConf{
+    color: #000;
+}
+/*59.seleccionar el elemento p cuyo id sea párrafo1*/
+p#párrafo1{
+    color: #000;
+}
+/*60. todos los a que sean hijos directos de p cuya id sea hijos*/
+p#hijos > a{
+    color: #000;
+}
+/*61.Todos los "p" que estén dentro de un "div"*/
+div p{
+    color: #000;
+}
+/*62.Los dos primeros "p"*/
+p:first-of-type, p:nth-of-type(2){
+    color: #000;
+}
+/*63.Todos los elementos "a" que tengan la clase "azul" que estén dentro de un "div"
+que contenga la id "primero"*/
+div#primero a#azul{
+    color: #000;
+}
+/*64.Todos los elementos "span" y todos los elementos "div" que tengan la clase
+"holaKtal"*/
+span, div.holaKtal{
+    color: #000;
+}
+/*65.Todos los elementos "li" con el atributo "h3" dentro de los "p" que sean hijos
+directos de "div"*/
+div > p li[h3]{
+    color: #000;
+}
+/*66.Todos los elementos impares de un "p"*/
+p > *:nth-child(2n+1){
+    color: #000;
+}
+/*67.Selecciona los "span" y "h3" dentro de un "div"*/
+div span, div h3{
+    color: #000;
+}
+/*68.Selecciona el tercer "a" y el quinto "p"*/
+a:nth-of-type(3), p:nth-of-type(5){
+    color: #000;
+}
+/*69.Selecciona los "h1" que sean de la clase "rojo" que estén dentro de un "div"*/
+div h1.rojo{
+    color: #000;
+}
+/*70.Todos los elementos contenidos dentro de un p y que a su vez estén dentro de
+un div*/
+div p *{
+    color: #000;
+}
+/*71.Todos los p que tengan la clase .centrado*/
+p.centrado{
+    color: #000;
+}
+/*72.Todos los elementos p contenidos en un h1 que tengan la clase .hola*/
+h1.hola p{
+    color: #000;
+}
+/*73.Los últimos hijos de div*/
+div > *:last-child{
+    color: #000;
+}
+/*74.El tercer a que esté dentro de un p*/
+p a:nth-of-type(3)
+/*75.Selecciona los h2 que tengan el id #titulo*/
+h2#titulo{
+    color: #000;
+}
+/*76.Selecciona el segundo p dentro de un div*/
+div p:nth-of-type(2){
+    color: #000;
+}
+/*77.Selecciona los p a partir del tercero*/
+p:nth-of-type(n+4){
+    color: #000;
+}
+/*78.Selecciona los h1 que sean hijos directos del segundo elemento p contenido en
+un div*/
+div p > h1{
+    color: #000;
+}
+/*79.Todos los elementos a con clase Buenas que se encuentren en un p con id
+Nombre que sean hijos de cualquier elemento.*/
+* > p#Nombre a.Buenas{
+    color: #000;
+}
+/*80.Todos los h1 de la página y todos los h2 que se encuentren dentro de un div.*/
+h1, div h2{
+    color: #000;
+}
+/*81.Todos los div de la página que sean los primeros de su tipo.*/
+div:first-of-type{
+    color: #000;
+}
+/*82.Todos los h3 de la página*/
+h3{
+    color: #000;
+}
+/*83. Toda imagen que se encuentre dentro de un p de clase Row*/
+p.Row img{
+    color: #000;
+}
+/*84.Todos los ol que se encuentren dentro de un cualquier elemento que este
+dentro de un div*/
+div * ol{
+    color: #000;
+}
+/*85.Todas los span, a y div que se encuentren en cualquier p*/
+p span, p a, p div{
+    color: #000;
+}
+/*86.Todos los primeros hijos que tengan la clase power que se encuentren dentro
+de cualquier elemento de clase hype*/
+.hype .power:first-child{
+    color: #000;
+}
+/*87.Todas las listas ordenadas de la pagina*/
+ol{
+    color: #000;
+}
+/*88.Todos los enlaces dentro de un párrafo con la clase .hola*/
+p.hola a{
+    color: #000;
+}
+/*89.El segundo hijo de p*/
+p > :nth-child(2){
+    color: #000;
+}
+/*90.El último hijo del segundo p dentro de div*/
+div p:nth-of-type(2)  *:last-child{
+    color: #000;
+}
+/*91.El primer hijo y el ultimo de div*/
+div > *:first-child, div > *:last-child{
+    color: #000;
+}
+/*92.selecciona el id #c-header dentro de p, que a su vez esta dentro de div*/
+div p #c-header{
+    color: #000;
+}
+/*93.Todos los p*/
+p{
+    color: #000;
+}
+/*94.Todas las imágenes con la clase loco*/
+img.loco{
+    color: #000;
+}
+/*95.El tercer hijo y el segundo enlace de p*/
+p :nth-child(3), p a:nth-of-type(2)
+/*96.El último p*/
+p:last-of-type{
+    color: #000;
+}
+/*97.Seleccionar el primer y último párrafo*/
+p:first-of-type, p:last-of-type{
+    color: #000;
+}

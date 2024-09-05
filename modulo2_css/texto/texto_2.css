@@ -1,0 +1,26 @@
+/*A partir de la página web que se te proporciona, debes crear una página web que tenga el mismo aspecto que la siguiente imagen sin modificar el html: */
+/*• El tipo de letra de la página es Arial, con el tipo de respaldo Verdana.*/
+html{
+    font-family: Arial,Verdana;
+}
+/* • El encabezado de nivel 1 utiliza el tipo de letra Georgia, con un tamaño de letra de 32 px y en versalitas. */
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-variant: small-caps;
+}
+/*• El encabezado de nivel 2 utiliza el tipo de letra Georgia, con un tamaño de letra de 24 px, en cursiva y en versalitas. */
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-variant: small-caps;
+    font-style: italic;
+}
+/*• Los títulos de los elementos de las listas aparecen en negrita.*/
+ul li{
+    font-weight: bold;
+}
+/* • El contenido de los elementos de las listas, aunque están etiquetados como <strong>, no se visualizan en negrita.*/
+ul li strong{
+    font-weight:lighter;
+}

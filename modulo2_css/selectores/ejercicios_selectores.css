@@ -15,7 +15,7 @@ h1, h3{
     color:fuchsia;
 }
 /*Selecciona los ol que estén dentro de body*/
-ol > body{
+body ol{
     color:fuchsia;
 }
 /*Cualquier elemento que tenga la clase "amarillo"*/
@@ -39,10 +39,10 @@ h2 ~ div{
     color:fuchsia;
 }
 /*Todos los elementos <p> con clase=paisa, descendientes de un elemento <ul>*/
-ul > p.paisa{
+ul p.paisa{
     color:fuchsia;
 }
 /*Selecciona los <h1>,<h2>,<h3> que tengan la clase "headertitle", hijos del header*/
-header > h1.headertitle, h2.headertitle, h3.headertitle´{
+header > h1.headertitle, h2.headertitle, h3.headertitle{
     color:fuchsia;
 }

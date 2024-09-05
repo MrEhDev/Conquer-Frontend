@@ -1,0 +1,13 @@
+/*• El encabezado de nivel 1 debe aparecer centrado y en mayúsculas.*/
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+/*• El encabezado de nivel 2 debe aparecer en mayúsculas. */
+h2{
+    text-transform: uppercase;
+}
+/*• El contenido etiquetado como <strong> debe aparecer subrayado.*/
+strong{
+    text-decoration: underline;
+}

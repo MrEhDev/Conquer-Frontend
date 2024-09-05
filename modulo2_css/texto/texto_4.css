@@ -1,0 +1,33 @@
+/*• El tipo de letra principal del texto debe ser Calibri. Como este tipo de letra no está en todos los ordenadores, se debe definir como alternativa los tipos de letra Arial, Helvetica y el tipo genérico sans-serif.*/
+html{
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+
+}
+/* • El tipo de letra del encabezado de nivel 1 debe ser Cambria. El tipo alternativo debe ser Times junto con el tipo genérico serif. El color del texto debe ser #1F497D y el color del fondo #BFBFBF. El tamaño del texto debe ser 24 px. El espaciado entre letras debe ser 0.5 em y el espaciado entre palabras 1.5 em. Además, el encabezado de nivel 1 debe aparecer centrado y en mayúsculas.*/
+h1{
+    font-family: Cambria, Times, serif;
+    color: #1F497D;
+    background-color: #BFBFBF;
+    font-size: 24px;
+    letter-spacing: 0.5em;
+    word-spacing: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* • El tipo de letra del encabezado de nivel 2 es igual que el encabezado de nivel 1. El color del texto debe ser #632423. El tamaño del texto debe ser 18 px. El espaciado entre letras debe ser 0.5 em. Además, el encabezado de nivel 2 debe aparecer en mayúsculas.*/
+h2{
+    font-family: Cambria, Times, serif;
+    color: #632423;
+    font-size: 18px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+/* • El contenido de las listas debe aparecer en cursiva y en negrita. Sin embargo, el contenido etiquetado como <strong> no debe aparecer en negrita, pero debe aparecer en versalitas.*/
+ul{
+    font-weight: bold;
+    font-style: italic;
+}
+ul strong{
+    font-weight: lighter;
+    font-variant: small-caps;
+}
