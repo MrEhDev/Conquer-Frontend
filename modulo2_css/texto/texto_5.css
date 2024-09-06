@@ -32,8 +32,8 @@
     src: url('fonts/Akronim-Regular.eot?#iefix') format('embedded-opentype'),
         url('fonts/Akronim-Regular.woff2') format('woff2'),
         url('fonts/Akronim-Regular.woff') format('woff'),
-        url('fonts/Akronim-Regular.svg#Akronim-Regular') format('svg');
-        url('fonts/Akronim-Regular.ttf') format('truetype'),
+        url('fonts/Akronim-Regular.svg#Akronim-Regular') format('svg'),
+        url('fonts/Akronim-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

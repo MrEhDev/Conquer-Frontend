@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+}
+li.flaticon img {
+    width: 30px;
+    padding-inline: 0.1em;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    line-height: 3em;
+}
+ul a:visited{
+    color: blue;
+}
+ul a:visited{
+    color: blue;
+}
+
+ul i{
+    color: rgb(0, 197, 171);
+    font-size: 30px;
+    padding-inline: 0.1em;
+}
+ul i:hover{
+    color: rgb(204, 42, 245);
+
+}
+ul i:visited{
+    color: rgb(0, 197, 171);
+
+}
+
+span.material-symbols-outlined{
+    color: rgb(0, 197, 171);
+    font-size: 30px;
+    padding-inline: 0.1em;
+}
+
+span.material-symbols-outlined:hover{
+    color: rgb(204, 42, 245);
+}
+
+li.icomoon span{
+    color: rgb(0, 197, 171);
+    font-size: 30px;
+    padding-inline: 0.1em;
+}
+
+li.icomoon span:hover{
+    color: rgb(204, 42, 245);
+}
