@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Didot';
+    src: url('fonts/Didot.eot');
+    src: url('fonts/Didot.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Didot.woff2') format('woff2'),
+        url('fonts/Didot.woff') format('woff'),
+        url('fonts/Didot.ttf') format('truetype'),
+        url('fonts/Didot.svg#Didot') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FreeMono';
+    src: url('fonts/FreeMono.eot');
+    src: url('fonts/FreeMono.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FreeMono.woff2') format('woff2'),
+        url('fonts/FreeMono.woff') format('woff'),
+        url('fonts/FreeMono.ttf') format('truetype'),
+        url('fonts/FreeMono.svg#FreeMono') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*Importar roboto desde google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+@font-face {
+    font-family: 'Akronim';
+    src: url('fonts/Akronim-Regular.eot');
+    src: url('fonts/Akronim-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Akronim-Regular.woff2') format('woff2'),
+        url('fonts/Akronim-Regular.woff') format('woff'),
+        url('fonts/Akronim-Regular.svg#Akronim-Regular') format('svg');
+        url('fonts/Akronim-Regular.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1{
+    text-align: center;
+}
+/*Crear un fichero con 6 párrafos y aplicarle los siguientes estilos*/
+/*El primer párrafo tiene una tipografía segura Verdana (sans-serif).*/
+#p1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*El segundo párrafo tiene una tipografía segura Didot (serif).*/
+#p2{
+    font-family: 'Didot', serif;
+}
+/*El tercer párrafo tiene una tipografía segura FreeMono (monospace).*/ 
+#p3{
+    font-family: 'FreeMono', monospace;
+}
+/*El cuarto párrafo tiene una tipografía importada desde Google Fonts Roboto 400 dentro de la etiqueta style.*/ 
+#p4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+/*El quinto párrafo tiene una tipografía descargada de Google Fonts Akronim y llamada con la instrucción @font-face. El tamaño de fuente 24px. Podéis descargarla directamente desde Google Fonts.*/ 
+#p5{
+    font-family: 'Akronim';
+    font-size: 24px;
+}
+/*El sexto párrafo tiene una tipografía importada desde Google Fonts Montserrat 400 mediante un <link>.*/
+#p6{
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
