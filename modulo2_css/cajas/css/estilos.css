@@ -1,0 +1,97 @@
+.caja1_ejercicio1{
+  width: 250;
+  height: 200;
+  border-color: red;
+  border-style: solid;
+  background-color: grey;
+  border-width: 5px;
+  padding: 10px;
+  margin: 25px;
+}
+.caja2_ejercicio1{
+  width: 300;
+  height: 200;
+  border: 7px solid green;
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  margin: 0px;
+}
+.contenedor{
+  border: 2px solid red;
+  width: 50%;
+  padding: 10px 0 50px 0;
+}
+.caja1_ejercicio2{
+  width: 50%;
+  margin: 10px 0 0 10px;
+  border: 2px solid green;
+}
+.caja2_ejercicio2{
+  width: 50%;
+  margin: 10px 0 0 50px;
+  border: 2px solid purple;
+}
+.caja3_ejercicio2{
+  width: 50%;
+  margin: 10px 0 0 100px;
+  border: 2px solid blue;
+}
+.caja1_ejercicio3{
+  border: 2px solid red;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+}
+.caja2_ejercicio3{
+  padding: 25px;
+  border: 2px solid lime;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+}
+.caja3_ejercicio3{
+  padding: 50px;
+  border: 2px solid aqua;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+.caja1_ejercicio4{
+  text-align: center;
+  border-top-style: dashed;
+  border-color: blue;
+  border-bottom-style: dotted;
+  border-left-style: groove;
+  border-right-style: outset;
+  border-width: 2px;
+  margin: 10px;
+}
+.caja2_ejercicio4{
+  border-color: green;
+  text-align: center;
+  border-top-style: double;
+  border-bottom-style: inherit;
+  border-left-style: initial;
+  border-right-style: inset;
+  border-width: 2px;
+  margin: 10px;
+}
+
+.caja3_ejercicio4{
+  text-align: center;
+  border: 2px solid fuchsia;
+  margin: 2px;
+  border-radius: 20px;
+}
+
+a{
+  color: black;
+  opacity: 0.5;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover{
+  opacity: 1;
+}

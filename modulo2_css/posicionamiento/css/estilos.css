@@ -1,0 +1,424 @@
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace
+}
+.ejercicio1{
+  background-color: rgb(211, 210, 210);
+  padding: 10px;
+  width: 400px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+}
+.ejercicio1 .caja1{
+  background-color: red;
+  display: inline-block;
+  width: 170px;
+  height: 40px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ejercicio1 .caja2{
+  background-color: blue;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 150px;
+  height: 40px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ejercicio1 .caja3{
+  background-color: green;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 170px;
+  height: 80px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ejercicio1 .caja4{
+  background-color: yellow;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 160px;
+  height: 80px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ejercicio 2 */
+
+.ejercicio2{
+  background-color: rgb(211, 210, 210);
+  width: 400px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  margin-top: 20px;
+}
+.ejercicio2 .caja1{
+  background-color: red;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ejercicio2 .caja2{
+  background-color: blue;
+  display: inline-block;
+  position: absolute;
+  bottom: 00px;
+  right: 0px;
+  width: 90px;
+  height: 90px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ejercicio2 .caja3{
+  background-color: green;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 90px;
+  height: 90px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ejercicio2 .caja4{
+  background-color: yellow;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 90px;
+  height: 90px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ /* Ejercicio 3 */
+
+ .ejercicio3{
+  background-color: rgb(211, 210, 210);
+  width: 400px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  margin-top: 20px;
+}
+.ejercicio3 .caja1{
+  background-color: blue;
+  display: inline-block;
+  width: 180px;
+  height: 120px;
+  z-index: 4;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  left: 100px;
+  top: 10px;
+  z-index: 1;
+}
+
+.ejercicio3 .caja2{
+  background-color: green;
+  display: inline-block;
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  width: 120px;
+  height: 90px;
+  font-size: 40px;
+  z-index: 2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ejercicio3 .caja3{
+  background-color: yellow;
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 230px;
+  width: 140px;
+  height: 110px;
+  font-size: 40px;
+  z-index: 3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ejercicio3 .caja4{
+  background-color: red;
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  right: 80px;
+  width: 220px;
+  height: 90px;
+  font-size: 40px;
+  z-index: 4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ejercicio 4 */
+
+.ejercicio4{
+ background-color: rgb(211, 210, 210);
+ width: 400px;
+ position: relative;
+ margin-left: auto;
+ margin-right: auto;
+ height: 250px;
+ margin-top: 20px;
+}
+.ejercicio4 .caja1{
+ background-color: green;
+ display: inline-block;
+ width: 80px;
+ height: 190px;
+ top: 30px;
+ left: 40px;
+ z-index: 1;
+ font-size: 40px;
+ font-family: Arial, Helvetica, sans-serif;
+ position: absolute;
+}
+
+.ejercicio4 .caja2{
+ background-color: yellow;
+ display: inline-block;
+ width: 80px;
+ height: 190px;
+ top: 30px;
+ left: 120px;
+ z-index: 1;
+ font-size: 40px;
+ font-family: Arial, Helvetica, sans-serif;
+ position: absolute;
+}
+.ejercicio4 .caja3{
+ background-color: red;
+ display: inline-block;
+ width: 80px;
+ height: 190px;
+ top: 30px;
+ left: 200px;
+ z-index: 1;
+ font-size: 40px;
+ font-family: Arial, Helvetica, sans-serif;
+ position: absolute;
+}
+.ejercicio4 .caja4{
+ background-color: blue;
+ display: inline-block;
+ width: 80px;
+ height: 190px;
+ top: 30px;
+ left: 280px;
+ z-index: 1;
+ font-size: 40px;
+ font-family: Arial, Helvetica, sans-serif;
+ position: absolute;
+}
+
+
+/* Ejercicio 5 */
+
+.ejercicio5{
+  background-color: rgb(211, 210, 210);
+  width: 400px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  margin-top: 20px;
+ }
+ .ejercicio5 .caja1{
+  background-color: yellow;
+  display: inline-block;
+  width: 320px;
+  height: 60px;
+  bottom: 40px;
+  left: 40px;
+  z-index: 1;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+ }
+ 
+ .ejercicio5 .caja2{
+  background-color: red;
+  display: inline-block;
+  width: 320px;
+  height: 60px;
+  top: 40px;
+  left: 40px;
+  z-index: 1;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+ }
+ .ejercicio5 .caja3{
+  background-color: blue;
+  display: inline-block;
+  width: 80px;
+  height: 210px;
+  top: 20px;
+  right: 240px;
+  z-index: 1;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+ }
+ .ejercicio5 .caja4{
+  background-color: green;
+  display: inline-block;
+  width: 80px;
+  height: 210px;
+  top: 20px;
+  left: 240px;
+  z-index: 1;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+ }
+
+ /* Ejercico 6 */
+
+.ejercicio6{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  align-content: center;
+}
+
+.ejercicio6 .caja1{
+  border: 2px solid black;
+  margin: 10px;
+  height: 250px;
+  width: 60px;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  margin: 5px;
+}
+.ejercicio6 .caja2{
+  border: 2px solid black;
+  margin: 10px;
+  height: 250px;
+  width: 60px;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  margin: 5px;
+}
+.ejercicio6 .caja3{
+  border: 2px solid black;
+  margin: 10px;
+  height: 250px;
+  width: 60px;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  margin: 5px;
+}
+.ejercicio6 .caja4{
+  border: 2px solid black;
+  margin: 10px;
+  height: 250px;
+  width: 60px;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Ejercicio8 */
+.ejercicio8{
+  border: 2px solid black;
+  width: 400px;
+  height: 500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.ejercicio8 header{
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.ejercicio8 div{
+  border: 2px solid black;
+  padding: 10px;
+  margin-right: 10px;
+  width: 160px;
+  height: 300px;
+  display: inline-block;
+
+}
+.ejercicio8 main{
+  border: 2px solid black;
+  padding: 10px;
+  width: 169px;
+  height: 200px;
+  display: inline-block;
+}
+.ejercicio8 footer{
+  border: 2px solid black;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Ejercicio 9 */
+
+.ejercicio9 header{
+  width: 80%;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ejercicio9 header h2{
+  text-align: left;
+  position: relative;
+  left: 0px;
+  display: inline-block;
+  border: 2px solid black;
+  left: 10px;
+  width: 40%;
+  height: 70px;
+}
+
+.ejercicio9 ul{
+  list-style: none;
+}
+
+.ejercicio9 ul li{
+  display: inline-block
+}
+
+.top-menu {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.menu {
+  position: relative;
+  bottom: 5px;
+  left: 350px;
+}
