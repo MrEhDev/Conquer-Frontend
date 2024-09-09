@@ -45,3 +45,21 @@ body{
 .articulo a{
     color: #CC6600;
 }
+.back{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: #cccccc;
+    padding: 5px;
+    opacity: 0.4;
+    font-size: 25px;
+}
+
+.back a{
+    text-decoration: none;
+}
+.back:hover{
+    opacity: 1;
+}

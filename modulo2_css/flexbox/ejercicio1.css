@@ -1,0 +1,146 @@
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,h2{
+    background-color: #333334;
+    color: white;
+    height: 60px;
+    padding: 30px 20px;
+    font-size: 40px;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header nav{
+    background-color: #cccccc;
+}
+
+ul:nth-of-type(1){
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 10px 20px;
+}
+
+nav a:hover{
+    background-color: #555;
+    color: #cccccc;
+}
+
+/* Ejercicio 2 */
+h2{
+    margin-top: 10px;
+}
+nav:nth-of-type(2) ul{
+    justify-content: center;
+}
+
+/* Ejercicio 3 */
+nav:nth-of-type(3) ul{
+    justify-content: space-between;
+}
+
+/* Ejercicio 4 */
+nav:nth-of-type(4) ul{
+    flex-direction: column;
+}
+nav:nth-of-type(4){
+    width: 30%;
+}
+
+#atras{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+nav:last-of-type a:hover{
+    border: 3px solid rgb(255, 246, 246);
+    border-radius: 30px;
+}
+
+.imagenes h1,.imagenes h2 {
+    padding: 5px 40px;
+    height: auto;
+    margin-bottom: 30px;
+}
+.imagenes h2 {
+    margin-top: 50px;
+}
+.ejercicio6 img{
+    max-width: 100px;
+    border: 1px dashed black;
+    margin: 0;
+}
+.ejercicio6_2 img{
+    max-width: 100px;
+    border: 1px dashed black;
+}
+
+ul{
+background-color: #cccccc;
+padding: 0%;
+gap: 10px;
+}
+
+/* Ejercicio 7 */
+.ejercicio7 h2{
+    font-size: 30px;
+    text-align: right;
+    padding: 10px 20px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  
+  .travel {
+    width: 33.33%;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .travel_title{
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .travel_description {
+    font-size: 12px;
+    text-align: justify;
+  }
+  
+  .travel:first-of-type {
+    background-color: #0095ff;
+  }
+  
+  .travel:nth-of-type(2) {
+    background-color: #00ffcc;
+  }
+  
+  .travel:nth-of-type(3) {
+    background-color: #4098b0;
+  }
+  
+  .travel_container {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 150px;
+  }
+  
+  .travel_img {
+    max-width: 100%;
+    aspect-ratio: 20/9;
+  }

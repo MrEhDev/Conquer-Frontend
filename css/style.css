@@ -1,3 +1,33 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Dogica';
+  src: url('../fonts/Dogica.eot');
+  src: url('../fonts/Dogica.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Dogica.woff2') format('woff2'),
+      url('../fonts/Dogica.woff') format('woff'),
+      url('../fonts/Dogica.ttf') format('truetype'),
+      url('../fonts/Dogica.svg#Dogica') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dogica Pixel';
+  src: url('../fonts/Dogica_Pixel_Bold.eot');
+  src: url('../fonts/Dogica_Pixel_Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Dogica_Pixel_Bold.woff2') format('woff2'),
+      url('../fonts/Dogica_Pixel_Bold.woff') format('woff'),
+      url('../fonts/Dogica_Pixel_Bold.ttf') format('truetype'),
+      url('../fonts/Dogica_Pixel_Bold.svg#Dogica_Pixel_Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CSS boilerplate */
+
 html {
   color: #222;
   font-size: 1em;
@@ -37,9 +67,8 @@ textarea {
 .clearfix::after {
   clear: both;
 }
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+
+
 @media print {
   *,
   *::before,
@@ -103,7 +132,7 @@ h3 {
 }
 }
 
-
+/* My CSS */
 
 :root {
   --azul-profundo: #1a1c31;
@@ -113,21 +142,51 @@ h3 {
   --fucsia-suave: #ff4684;
   --blanco: #FFFFFF;
   --gris-claro: #E0E0E0;
+  /* paleta 1.0 */
+  --azul-fondo: #1A1C30;
+  --azul-pal: #53A3D3;
+  --purpura-comp: #7B5AD6;
+  --verde-1: #32CD32;
+  --verde_pal: #48CC8B;
 }
 
 body {
-  background-color: var(--azul-profundo);
+  background-color: var(--azul-fondo);
   color: var(--blanco);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Dogica';
   text-align: center;
 }
 
 h1, h2, h3 {
-  color: var(--turquesa);
+  color: var(--azul-pal);
+}
+h1{
+  font-size: 44px;
+  font-family: 'Dogica Pixel';
+  color: var(--verde_pal);
 }
 
+h2{
+  font-family: 'Dogica Pixel';
+  color: var(--azul-pal);
+}
+h3{
+  color: var(--blanco);
+}
+ul li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Establece el layout del li como flexbox */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  text-align: center; /* Centra el texto si hay varias líneas */
+}
+
+
+
 a {
-  color: var(--fucsia-suave);
+  color: var(--purpura-comp);
   text-decoration: none;
 }
 
@@ -175,25 +234,44 @@ ul{
   opacity: 1;
 }
 
-.html ul li{
+ul li a{
+  display: block;
   list-style: none;
-  color: #ed5e26;
-  border: 6px solid #e54c25;
   display: inline-block;
-  width: 122px;
-  height: 90px;
   border-radius: 25px;
   padding: 15px;
   position: relative;
   align-content: center;
-  margin-left: auto;
+  margin-left: 20px;
   margin-right: auto;
-  vertical-align: top;
+  border: 6px solid #7B5AD6;
+  background-color: white;
+  min-height: 90px;
+  min-width: 150px;
+  max-width: 180px;
+  font-size: 0.8em;
+}
+
+ul li a strong{
+  font-family: 'Dogica Pixel', Arial, Helvetica, sans-serif;
+  font-size: 1 em;
+}
+
+
+.html ul li a{
+  color: #ed5e26;
+  border: 6px solid #e54c25;
+  width: 150px;
+  height: 90px;
   margin-top: 10px;
   background-color: rgb(255, 255, 255);
   opacity: 1;
+  font-family: 'Dogica', Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }
-.html ul li:hover{
+
+
+.html ul a:hover{
   color: white;
   background-color: #ed5e26;
 }
@@ -205,10 +283,23 @@ a + a{
 .html strong{
   font-variant-caps: small-caps;
   font-size: 20px;
+  font-family: 'Dogica Pixel', Arial, Helvetica, sans-serif;
 }
 
 #proyecto_html{
   font-size: 1.5em;
+}
+
+/* html para móviles */
+@media (max-width: 520px) {
+  .html ul li a{
+      padding: 10px;
+      width: 140px;
+      font-size: 0.6em;
+  }
+  .html ul li a strong{
+    font-size: 1rem;
+  }
 }
 
 /* CSS */
@@ -224,54 +315,62 @@ nav.css{
   margin-left: auto;
   margin-right: auto;
 }
-.css ul li{
+.css ul li a{
+  display: block;
   list-style: none;
   color: #13a1df;
   border: 6px solid #006fb9;
   display: inline-block;
-  width: 122px;
+  width: 150px;
   height: 90px;
   border-radius: 25px;
-  padding: 15px;
   position: relative;
   align-content: center;
   margin-left: auto;
   margin-right: auto;
-  vertical-align: top;
   margin-top: 10px;
   background-color: rgb(255, 255, 255);
   opacity: 1;
+  font-family: 'Dogica', Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }
 
-.css ul li:hover{
+
+.css ul a:hover{
   color: white;
   background-color: #13a1df;
 }
 .css strong{
   font-variant-caps: small-caps;
   font-size: 20px;
-}
-
-nav.css li{
-  overflow: unset;
+  font-family: 'Dogica Pixel', Arial, Helvetica, sans-serif;
 }
 
 
 li{
   list-style: none;
   color: #b93498;
-  border: 6px solid #006fb9;
   display: inline-block;
-  width: 122px;
-  height: 90px;
+  width: auto;
+  min-height: 90px;
   border-radius: 25px;
-  padding: 15px 20px 15px 20px;
   position: relative;
   align-content: center;
   text-align: center;
   vertical-align: top;
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.788);
   opacity: 1;
   font-weight: bold;
+}
+
+/* CSS para móviles */
+@media (max-width: 520px) {
+  .css ul li a{
+      padding: 10px;
+      width: 140px;
+      font-size: 0.6em;
+  }
+  .css ul li strong{
+    font-size: 1rem;
+  }
 }
