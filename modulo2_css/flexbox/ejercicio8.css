@@ -1,6 +1,3 @@
-header{
-}
-
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -31,6 +28,11 @@ h1{
     align-items:last baseline;
     padding: 0;
     height: auto;
+}
+
+nav.menu li+li:before{
+    content: " | ";
+    color: white;
 }
 
 nav ul li{

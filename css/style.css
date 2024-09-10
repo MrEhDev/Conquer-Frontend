@@ -173,16 +173,6 @@ h2{
 h3{
   color: var(--blanco);
 }
-ul li a{
-  display: block;
-  width: 100%;
-  height: 100%;
-  display: flex; /* Establece el layout del li como flexbox */
-  justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
-  text-align: center; /* Centra el texto si hay varias líneas */
-}
-
 
 
 a {
@@ -216,7 +206,6 @@ a:hover {
 
 nav.html{
   position: relative;
-  padding: 10px 0 20px 0;
   background-image: url(../img/html5.webp);
   background-size: cover;
   background-position: center;
@@ -290,17 +279,6 @@ a + a{
   font-size: 1.5em;
 }
 
-/* html para móviles */
-@media (max-width: 520px) {
-  .html ul li a{
-      padding: 10px;
-      width: 140px;
-      font-size: 0.6em;
-  }
-  .html ul li a strong{
-    font-size: 1rem;
-  }
-}
 
 /* CSS */
 nav.css{
@@ -332,7 +310,6 @@ nav.css{
   background-color: rgb(255, 255, 255);
   opacity: 1;
   font-family: 'Dogica', Arial, Helvetica, sans-serif;
-  font-size: 12px;
 }
 
 
@@ -363,14 +340,27 @@ li{
   font-weight: bold;
 }
 
+
+
 /* CSS para móviles */
 @media (max-width: 520px) {
-  .css ul li a{
+  ul li a{
       padding: 10px;
-      width: 140px;
-      font-size: 0.6em;
+      max-width: 90px;
+      font-size: 0.6rem;
+      margin: 5px;
   }
-  .css ul li strong{
-    font-size: 1rem;
+  ul li strong{
+    font-size: 0.7rem;
+  }
+  ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  li{
+    margin: 0;
   }
 }
