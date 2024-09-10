@@ -1,0 +1,265 @@
+body{
+  border: 2px solid yellow;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+  text-align: center;
+}
+h2{
+  margin: 20px 0 0 0;
+}
+p{
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+div div{
+  padding: 0;
+  color: white;
+}
+div div:nth-child(1){
+  background-color: #58b99d;
+}
+div div:nth-child(2){
+  background-color: #5296d5;
+}
+div div:nth-child(3){
+  background-color: #925cb1;
+}
+div div:nth-child(4){
+  background-color: #38485c;
+}
+div div:nth-child(5){
+  background-color: #eac645;
+}
+div div:nth-child(6){
+  background-color: #d8833b;
+}
+div div:nth-child(7){
+  background-color: #d65745;
+}
+div div:nth-child(8){
+  background-color: #bec3c7;
+}
+div div:nth-child(9){
+  background-color: #65c97a;
+}
+div div:nth-child(10){
+  background-color: #4a9e86;
+}
+
+/* Ejercicio 1 */
+.container1{
+  display: flex;
+  border: 2px solid red;
+  max-width: 100%;
+  height: 300px;
+}
+
+/* Ejercicio 2 */
+.container2{ /*contenedor*/
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  border: 2px solid red;
+  max-width: 100%;
+  height: 300px;
+}
+.container2 div{ /*item*/
+  flex-basis: content;
+  flex-grow: 1;
+}
+
+/* Ejercicio 3 */
+.container3{ /*contenedor*/
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border: 2px solid red;
+  min-height: 300px;
+}
+.container3 div{ /*item*/
+  width: 33.33%;
+}
+
+/* Ejercicio 4 */
+.container4{ /*contenedor*/
+  display: flex;
+  text-align: center;
+  border: 2px solid red;
+  width: auto;
+  width: 300px;
+}
+.container4 div{/*item*/
+  flex-basis: content;
+  flex-grow: 1;
+}
+
+.container4 div:nth-of-type(1){
+  order: 2;
+}
+.container4 div:nth-of-type(2){
+  order: 3;
+}
+.container4 div:nth-of-type(3){
+  order: 4;
+}
+.container4 div:nth-of-type(4){
+  order: 5;
+}
+.container4 div:nth-of-type(5){
+  order: 1;
+}
+.container4 div:nth-of-type(6){
+  order: 10;
+}
+.container4 div:nth-of-type(7){
+  order: 6;
+}
+.container4 div:nth-of-type(8){
+  order: 7;
+}
+.container4 div:nth-of-type(9){
+  order: 8;
+}
+.container4 div:nth-of-type(10){
+  order: 9;
+}
+
+/* Ejercicio 5 */
+.container5{ /*contenedor*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border: 2px solid red;
+  width: auto;
+  max-width: 100%;
+  height: 600px;
+}
+
+/* Ejercicio 6 */
+.container6{ /*contenedor*/
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  border: 2px solid red;
+  width: auto;
+  max-width: 100%;
+  height: 300px;
+}
+
+.container6 div:nth-of-type(1){
+  height: auto;
+  width: auto;
+  font-size: 5px;
+}
+.container6 div:nth-of-type(2){
+  height: auto;
+  width: auto;
+  font-size: 20px;
+}
+.container6 div:nth-of-type(3){
+  height: auto;
+  width: auto;
+  font-size: 25px;
+}
+.container6 div:nth-of-type(4){
+  height: auto;
+  width: auto;
+  font-size: 40px;
+}
+.container6 div:nth-of-type(5){
+  height: auto;
+  width: auto;
+  font-size: 5px;
+}
+.container6 div:nth-of-type(6){
+  height: auto;
+  width: auto;
+  font-size: 20px;
+}
+.container6 div:nth-of-type(7){
+  height: auto;
+  width: auto;
+  font-size: 20px;
+}
+.container6 div:nth-of-type(8){
+  height: auto;
+  width: auto;
+  font-size: 20px;
+}
+.container6 div:nth-of-type(9){
+  height: auto;
+  width: auto;
+  font-size: 20px;
+}
+.container6 div:nth-of-type(10){
+  height: auto;
+  width: auto;
+  font-size: 15px;
+}
+
+/* Ejercicio 7 */
+.container7{ /*contenedor*/
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  border: 2px solid red;
+  width: auto;
+  max-width: 100%;
+  height: 300px;
+}
+
+.container7 div{
+  width: 33.33%;
+}
+
+/* Ejercicio8 */
+
+.container8{
+  display: flex;
+  max-width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  align-items: start;
+}
+
+
+.container8 div{
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+}
+
+.container8 div:nth-of-type(2){
+  align-self: stretch;
+}
+.container8 div:nth-of-type(6){
+  align-self: center;
+}
+.container8 div:nth-of-type(9){
+  align-self: flex-end;
+}
+
+.back{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  border: 3px solid black;
+  border-radius: 30px;
+  background-color: #cccccc;
+  padding: 5px;
+  opacity: 0.4;
+  font-size: 25px;
+}
+
+.back a{
+  text-decoration: none;
+}
+.back:hover{
+  opacity: 1;
+}

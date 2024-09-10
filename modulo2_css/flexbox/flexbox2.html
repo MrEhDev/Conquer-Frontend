@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Clase 22 - Flexbox 2</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="flexbox2.css" media="screen">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <h1>CSS Clase 22 - Flexbox 2</h1>
+    <hr>
+  </header>
+  <main>
+    <h2>Ejercicio 1 - Intro</h2>
+    <p>Realiza un diseño de divs que se asemeje lo máximo posible al siguiente, usando 
+      Flexbox. El div principal debe ocupar el máximo espacio disponible en ancho y alto 
+      del navegador. No debe mostrarse barra de scroll, ni vertical ni horizontal </p>
+    <div class="container1">
+      <div class="1">1</div>
+      <div class="2">2</div>
+      <div class="3">3</div>
+      <div class="4">4</div>
+      <div class="5">5</div>
+      <div class="6">6</div>
+      <div class="7">7</div>
+      <div class="8">8</div>
+      <div class="9">9</div>
+      <div class="10">10</div>
+    </div>
+    <h2>Ejercicio 2 – flex-direction</h2>
+    <p>Realiza un diseño de divs que se asemeje lo máximo posible al siguiente, usando 
+      Flexbox. Debes utiliza flex-direction. Salvo que tengas una resolución de pantalla 
+      muy grande, será normal que se muestre la barra de scroll vertical. Debes mostrar 
+      los 10 divs, en total, y con sus números en orden inverso.</p>
+    <div class="container2">
+      <div class="1">1</div>
+      <div class="2">2</div>
+      <div class="3">3</div>
+      <div class="4">4</div>
+      <div class="5">5</div>
+      <div class="6">6</div>
+      <div class="7">7</div>
+      <div class="8">8</div>
+      <div class="9">9</div>
+      <div class="10">10</div>
+    </div>
+    <h2>Ejercicio 3 – flex-wrap</h2>
+    <p>Realiza un diseño de divs que se asemeje lo máximo posible al siguiente, usando 
+      Flexbox. No se debe mostrar barra de scroll alguna. Deben mostrarse tres divs por 
+      fila.</p>
+    <div class="container3">
+      <div class="1">1</div>
+      <div class="2">2</div>
+      <div class="3">3</div>
+      <div class="4">4</div>
+      <div class="5">5</div>
+      <div class="6">6</div>
+      <div class="7">7</div>
+      <div class="8">8</div>
+      <div class="9">9</div>
+      <div class="10">10</div>
+    </div>
+    <h2>Ejercicio 4 – flex-ordering</h2>
+    <p>Realiza un diseño de divs que se asemeje lo máximo posible al siguiente, usando 
+      Flexbox. No tiene que mostrarse al alto completo que permita el navegador. 
+      Simplemente se mostrará una fila en la parte superior de la página. Debes 
+      observar muy bien el orden: el 5 es el primero y el 6 el último. Los divs, en el código 
+      html, deben estar ordenados normalmente (del 1 al 10), pero debes modificar el 
+      orden de los divs 5 y 6 mediante la propiedad css “order”. Como truco, para que 
+      todos los divs tengan el mismo ancho, repartiéndose por igual el que tiene el 
+      navegador, debes usar una propiedad css como esta: “flex: 1;” en cada uno de los 
+      divs dentro de la fila. Con esa propiedad estas estableciendo el peso de cada div, 
+      como todos tendrán el valor “1”, todos ocuparán el mismo espacio</p>
+    <div class="container4">
+      <div class="1">1</div>
+      <div class="2">2</div>
+      <div class="3">3</div>
+      <div class="4">4</div>
+      <div class="5">5</div>
+      <div class="6">6</div>
+      <div class="7">7</div>
+      <div class="8">8</div>
+      <div class="9">9</div>
+      <div class="10">10</div>
+    </div>
+    <h2>Ejercicio 5 – Alignment and centering</h2>
+    <p>No debe haber barras de scroll. Se debe ocupar el alto completo del navegador. Los 
+      divs se muestran en formato vertical. Debes utilizar “justify-content” y observa que 
+      el primer y el último div no tienen espacio entre ellos y los límites superior e inferior</p>
+    <div class="container5">
+      <div class="1">1</div>
+      <div class="2">2</div>
+      <div class="3">3</div>
+      <div class="4">4</div>
+      <div class="5">5</div>
+      <div class="6">6</div>
+      <div class="7">7</div>
+      <div class="8">8</div>
+      <div class="9">9</div>
+      <div class="10">10</div>
+    </div>
+    <h2>Ejercicio 6</h2>
+    <p>Realiza un diseño de divs que se asemeje lo máximo posible al siguiente, usando 
+      Flexbox</p>
+    <div class="container6">
+      <div class="1">1</div>
+      <div class="2">2</div>
+      <div class="3">3</div>
+      <div class="4">4</div>
+      <div class="5">5</div>
+      <div class="6">6</div>
+      <div class="7">7</div>
+      <div class="8">8</div>
+      <div class="9">9</div>
+      <div class="10">10</div>
+    </div>
+    <h2>Ejercicio 7 – Align-content</h2>
+    <p>Realiza un diseño de divs que se asemeje lo máximo posible al siguiente, usando 
+      Flexbox. Debes utilizar el alto completo del navegador. Utilizaras las propiedades 
+      “align-conten” y otra, que también permite trabajar con alineación.</p>
+    <div class="container7">
+      <div class="1">1</div>
+      <div class="2">2</div>
+      <div class="3">3</div>
+      <div class="4">4</div>
+      <div class="5">5</div>
+      <div class="6">6</div>
+      <div class="7">7</div>
+      <div class="8">8</div>
+      <div class="9">9</div>
+      <div class="10">10</div>
+    </div>
+    <h2>Ejercicio 8 – Align-self</h2>
+    <p>Realiza un diseño de divs que se asemeje lo máximo posible al siguiente, usando 
+      Flexbox. Recuerda que, aunque align-items (en el div principal con propiedad 
+      display:flex) permite especificar la alineación de todos los divs interiores, puedes 
+      especificar una alineación concreta con align-self</p>
+    <div class="container8">
+      <div class="1">1</div>
+      <div class="2">2</div>
+      <div class="3">3</div>
+      <div class="4">4</div>
+      <div class="5">5</div>
+      <div class="6">6</div>
+      <div class="7">7</div>
+      <div class="8">8</div>
+      <div class="9">9</div>
+      <div class="10">10</div>
+    </div>
+
+  </main>
+
+
+  <nav class="back"><a href="../../index.html">🔙</a></nav>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
