@@ -1,0 +1,421 @@
+body {
+    font-size: 16px;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Ejercicio 1 */
+div.grids1{
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    gap: 5px;
+    width: 600px;
+    height: 100px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+div.grids1 div{
+    background-color: #663399;
+    padding: 5px;
+}
+
+/* Ejercicio 2 */
+
+div.grids2{
+    display: grid;
+    grid-template-rows: 50px 100px 50px;
+    grid-template-columns: 50px  100px;
+    gap: 5px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+div.grids2 div{
+    background-color: #00bc98;
+    padding: 30px;
+    border: 2px solid white;
+}
+
+
+/* Ejercicio 3 */
+
+div.grids3{
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+}
+
+div.grids3 div{
+    background-color: #00bc98;
+    padding: 39px 0;
+}
+
+/* Ejercicio 4 */
+
+.grids4{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'main main . sidebar'
+    'footer footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    height: 200px;
+}
+div.grids4 div{
+    border: 2px solid black;
+}
+
+div.grids4 .header{
+    grid-area: header;
+    background-color: red;
+}
+
+div.grids4 .main{
+    grid-area: main;
+    background-color: #87f2f0;
+}
+
+div.grids4 .sidebar{
+    grid-area: sidebar;
+    background-color: #78cc92;
+}
+
+div.grids4 .footer{
+    grid-area: footer;
+    background-color: #8c7787;
+}
+
+/* -------- RELACION 1 -------- */
+
+div.ejercicio1{
+    display: grid;
+    align-items: center;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    min-height: 150px;
+    gap: 1px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.ejercicio1 .items{
+    background-color: #5f717d;
+    min-height: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+
+/* Ejercicio 2 */
+
+div.ejercicio2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1px;
+    margin-bottom: 50px;
+}
+
+.ejercicio2 .items{
+    background-color: #5f717d;
+    min-height: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+
+
+.ejercicio2 div:nth-child(1){
+    grid-column: 1/ span 3;
+}
+
+/* Ejercicio 3 */
+
+.ejercicio3{
+    display: grid;
+    grid-template-columns: 100px 150px 150px;
+    grid-template-rows: 50px 50px 50px;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1px;
+    margin-bottom: 50px;
+}
+
+.ejercicio3 .items:nth-of-type(1){
+    grid-column: 1/ span 3;
+}
+
+.ejercicio3 .items:nth-of-type(2){
+    grid-row: 2/ span 2;
+    height: 100%;
+}
+
+.ejercicio3 .items{
+    background-color: #5f717d;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+/* Ejercicio 4 */
+
+div.ejercicio4{
+    display: grid;
+    grid-template-areas:
+    'grid1 grid1 grid1'
+    'grid2 grid3 grid4'
+    'grid2 grid5 grid6';
+    grid-template-columns: 100px 150px 150px;
+    gap: 1px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+div.ejercicio4 div{
+    background-color: #5f717d;
+    padding: 15px;
+}
+
+div.ejercicio4 div:nth-of-type(1){
+    grid-area: grid1;
+}
+div.ejercicio4 div:nth-of-type(2){
+    grid-area: grid2;
+}
+div.ejercicio4 div:nth-of-type(3){
+    grid-area: grid3;
+}
+
+/* Ejercicio5 */
+
+div.ejercicio5{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.ejercicio5 div{
+    background-color: #5f717d;
+    padding: 15px;
+}
+
+div.ejercicio5>div.header{
+    grid-area: 1 / 1 / span 1 / span 3;
+}
+
+div.ejercicio5>div.sidebar{
+    grid-area: 1 / 4 / span 2 / span 4;
+}
+
+/* Ejercicio6 */
+
+div.ejercicio6{
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.ejercicio6 div{
+    background-color: #5f717d;
+    padding: 15px;
+}
+
+div.ejercicio6 div:nth-of-type(1){
+    background-color: #5f717d;
+    grid-area: 1 / 1 / 1 / 3;
+    padding: 15px;
+}div.ejercicio6 div:nth-of-type(2){
+    background-color: #5f717d;
+    grid-area: 1 / 3 / 1 / 6;
+    padding: 15px;
+}
+div.ejercicio6 div:nth-of-type(3){
+    background-color: #5f717d;
+    grid-area: 2 / 1 / 2 / 1;
+    padding: 15px;
+}
+div.ejercicio6 div:nth-of-type(4){
+    background-color: #5f717d;
+    grid-area: 2 / 2 / 2 / 6;
+    padding: 15px;
+}
+div.ejercicio6 div:nth-of-type(5){
+    background-color: #5f717d;
+    grid-area: 3 / 1 / 3 / 6;
+    padding: 15px;
+}
+
+/* Ejercicio 7 */
+
+div.ejercicio7{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 2fr;
+    gap: 1px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.ejercicio7 div:nth-of-type(1){
+    background-color: #9c5e11;
+    grid-area: 1 / 2 / 2 / 2;
+    padding: 15px;
+}
+
+div.ejercicio7 div:nth-of-type(2){
+    background-color: #5f717d;
+    grid-area: 2 / 1 / 2 / 2;
+    padding: 15px;
+}
+
+div.ejercicio7 div:nth-of-type(3){
+    background-color: #5f717d;
+    grid-area: 2 / 2 / 2 / 3;
+    padding: 15px;
+}
+
+div.ejercicio7 div:nth-of-type(4){
+    background-color: #4f5151;
+    grid-area: 3 / 1 / 3 / 3;
+    padding: 15px;
+}
+
+/* Ejercicio 8 */
+
+div.ejercicio8{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.ejercicio8 div:nth-of-type(1){
+    background-color: #5f717d;
+    grid-area: 2 / 3 / 2 / 3;
+    padding: 15px;
+}
+
+div.ejercicio8 div:nth-of-type(2){
+    background-color: #5f717d;
+    grid-area: 1 / 1 / 1 / 1;
+    padding: 15px;
+}
+
+div.ejercicio8 div:nth-of-type(3){
+    background-color: #5f717d;
+    grid-area: 1 / 2 / 1 / 2;
+    padding: 15px;
+}
+
+div.ejercicio8 div:nth-of-type(4){
+    background-color: #5f717d;
+    grid-area: 1 / 3 / 1 / 3;
+    padding: 15px;
+}
+
+div.ejercicio8 div:nth-of-type(5){
+    background-color: #5f717d;
+    grid-area: 2 / 1 / 2 / 1;
+    padding: 15px;
+}
+
+div.ejercicio8 div:nth-of-type(6){
+    background-color: #5f717d;
+    grid-area: 2 / 2 / 2 / 2;
+    padding: 15px;
+}
+
+/* Ejercicio 9 */
+
+div.ejercicio9{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    grid-auto-flow: column;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.ejercicio9 div{
+    background-color: #5f717d;
+    padding: 15px;
+}
+
+/* Ejercicio 10 */
+
+div.ejercicio10{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 2fr;
+    gap: 1px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.ejercicio10 div{
+    background-color: #5f717d;
+    padding: 15px;
+}
+
+.ejercicio10 div.anidado{
+    grid-area: 2 / 2 / span 2 / 2;
+}
+
+div.ejercicio10 div.anidado{
+    display: grid;
+    grid-template-rows: repeat(3 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+}
+
+div.ejercicio10 div.anidado div{
+    background-color: #d5d5f2;
+    color: black;
+}
+
+div.ejercicio10 div.anidado div:nth-of-type(1){
+    grid-area: 1 / 1 / 1 / span 2;
+}
