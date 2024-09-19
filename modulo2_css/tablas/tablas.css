@@ -1,0 +1,239 @@
+main{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-spacing: 0;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ejercicio1 thead tr th{
+    padding: 15px 50px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.ejercicio1 tbody tr td{
+    padding: 15px 50px;
+}
+.ejercicio1 thead{
+    background-color: black;
+    color: white;
+}
+
+.ejercicio1 tbody tr:nth-of-type(odd){
+    background-color: #eeeeee;
+    color: black;
+    text-transform: none;
+}
+
+.ejercicio1 tbody tr:nth-of-type(even){
+    background-color: white;
+    color: black;
+}
+
+
+/* Ejercicio2 */
+
+table.ejercicio2{
+    border-radius: 10px 10px 0 0;
+    overflow: hidden; /* Esto permite que el borde curvo funcione correctamente */
+    border-bottom: 5px solid #43967b;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 10px 30px white
+}
+
+table.ejercicio2 thead tr th, table.ejercicio2 tbody tr td{
+    padding: 15px 50px;
+}
+
+table.ejercicio2 thead tr th{
+    background-color: #43967b;
+    color: white;
+    font-weight: normal;
+}
+
+table.ejercicio2 tbody tr:nth-of-type(odd){
+    background-color: white;
+    color: black;
+}
+
+table.ejercicio2 tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+    color: black;
+}
+
+table.ejercicio2 tbody tr.students{
+    color: #43967b;
+    font-weight: bold;
+}
+
+/* Ejercicio3 */
+
+table.ejercicio3{
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
+table.ejercicio3 thead tr th{
+    background-color: #333333;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+table.ejercicio3 tbody tr:nth-of-type(odd) td{
+    background-color: #eeeeee;
+    padding: 5px 10px;
+    color: black;
+}
+table.ejercicio3 tbody tr:nth-of-type(even) td{
+    background-color: white;
+    padding: 5px 10px;
+    color: black;
+}
+
+table.ejercicio3 tbody tr:nth-of-type(odd) td:first-of-type{
+    background-color: #3f65c5;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-align: start;
+    color: white;
+}
+table.ejercicio3 tbody tr:nth-of-type(even) td:first-of-type{
+    background-color: #2f54c5;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-align: start;
+    color: white;
+}
+
+table.ejercicio3 tbody tr td.outstanding{
+    font-weight: bold;
+    background-color: #f9d949;
+}
+
+/* Ejercicio5 */
+table.ejercicio5{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+}
+
+table.ejercicio5 thead tr th{
+    font-weight: normal;
+    text-align: start;
+    padding: 10px 30px 10px 10px;
+    text-transform: uppercase;
+}
+
+table.ejercicio5 tbody tr th, table.ejercicio5 tbody tr td{
+    text-align: start;
+    padding: 10px 30px 10px 10px;
+}
+
+table.ejercicio5 tbody tr:nth-of-type(even),table.ejercicio5 thead{
+    background-color: white;
+    color: black
+}
+
+table.ejercicio5 tbody tr:nth-of-type(odd){
+    background-color: #ededed;
+    color: black;
+}
+
+table.ejercicio5 a.btn{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    text-transform: none;
+}
+
+table.ejercicio5 .progress{
+    background-color: #53a551;
+    color: white;
+}
+
+table.ejercicio5 .open{
+    background-color: #f6c344;
+    color: black;
+}
+
+table.ejercicio5 .hold{
+    background-color: #cb444a;
+    color: white;
+}
+
+/* Ejercicio 6 */
+
+table.ejercicio6 thead tr th,table.ejercicio6 tbody tr td{
+    text-align: start;
+    padding: 5px 60px 5px 0;
+    min-width: fit-content
+}
+
+table.ejercicio6 tbody tr td:first-child,table.ejercicio6 thead tr th:first-child  {
+    padding: 10px;
+}
+
+table.ejercicio6 thead{
+    background-color: #19191d;
+    color: white;
+}
+table.ejercicio6 tbody{
+    background-color: #25252a;
+    color: #5f5f60;
+}
+
+table.ejercicio6 tbody tr td{
+    border-bottom: 2px solid #19191d;
+}
+
+table.ejercicio6 tbody tr td:nth-of-type(4){
+    font-size: 12px;
+    padding: 15px;
+}
+
+table.ejercicio6 tbody tr td p.ocupation,table.ejercicio6 tbody tr td:nth-of-type(3){
+    color: white ;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Ejercicio 7 */
+
+table.ejercicio7 thead tr th{
+    background-color: #5f13ef;
+    font-size: 13px;
+    padding: 30px 40px;
+}
+
+table.ejercicio7 tbody tr th,table.ejercicio7 tbody tr td:nth-of-type(even){
+    background-color: #e9ebf7;
+    color: black;
+    font-size: 13px;
+    padding: 30px 40px;
+}
+
+table.ejercicio7 tbody tr td:nth-of-type(odd){
+    background-color: #ffffff;
+    color: black;
+    font-size: 13px;
+    padding: 30px 40px;
+}
+
+table.ejercicio7 tbody a.btn{
+    background-color: #5f13ef;
+    color: white;
+    font-size: 10px;
+    border-radius: 2px;
+    padding: 8px 10px;
+}
