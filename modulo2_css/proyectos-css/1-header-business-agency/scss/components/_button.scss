@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn{
+    padding: 17px 34px;
+    background-color: #7EDAD2;
+    color: white;
+    display: flex;
+    width: 180px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    position: relative;
+    top: 100px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

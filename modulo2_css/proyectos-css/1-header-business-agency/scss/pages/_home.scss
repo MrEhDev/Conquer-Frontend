@@ -1,0 +1,107 @@
+@use '../abstracts/mixins';
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+section.image {
+    width: 1112px;
+    height: 876px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 0;
+
+    @include mixins.tablet{
+        display: none;
+    }
+    @include mixins.mediaquery(1600px){
+        width: 60%;
+    }
+}
+
+.hero{ 
+    & h1{
+        font-family: 'Bebas Neue', Arial, Helvetica, sans-serif ;
+        color: #424241;
+        font-size: 120px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120px;
+        max-width: 800px;
+        max-height: 240px;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        top: 113px;
+        margin: 8px;
+            & span{
+                color: #7EDAD2;
+            }
+    }
+    & p{
+        color: #909090;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        max-width: 719px;
+        max-height: 80px;
+        position: relative;
+        top: 90px;
+    }
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 200px;
+    
+    & article{
+        background-color: white;
+        width: 376px;
+        padding: 32px;
+    }
+
+    
+    @include mixins.mediaquery(1600px){
+        width: 100%;
+        margin: 0;
+    }
+}
+
+section.dates{
+    width: 530px;
+    display: flex;
+    position: relative;
+    top: 156px;
+    justify-content: space-between;
+
+    & div{
+        font-family: "Bebas Neue";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        width: 152px;
+        align-items: center;
+        flex-direction: column;
+
+        & span {
+            font-family: "Poppins";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            color: #909090;
+        }
+    }
+}

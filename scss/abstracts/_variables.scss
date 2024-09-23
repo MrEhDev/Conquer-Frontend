@@ -1,0 +1,28 @@
+//
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+// Colors
+$bgcolor: #1a1c30;
+$text1color: #48cc8b;
+$text2color: #53a3d3;
+$text3color: #7b5ad6;
+$resalt-color: #b83fec;
+$text-html-color: #ae4a29;
+$text-css-color: #1579ab;
+
+// Size font
+$font-big: 44px;
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+

@@ -1,0 +1,16 @@
+@import '../abstracts/variables';
+
+/**
+ * Basic typography style for copy text
+ */
+
+ h1{
+    font-size: 44px;
+    font-family: 'Dogica Pixel';
+    color: $text1color;
+    font-size: $font-big;
+  }
+  
+  h2{
+    color: $text2color;
+  }

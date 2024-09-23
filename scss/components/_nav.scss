@@ -1,0 +1,49 @@
+@import '../abstracts/mixins.scss';
+@import '../abstracts/variables.scss';
+
+nav.html{
+    @include nav-box-position;
+    @include nav-box-decorate('../img/html5.webp', $text-html-color);
+}
+nav.html ul li a{
+    @include menu($text-html-color, white);
+}
+
+nav.css{
+    @include nav-box-position;
+    @include nav-box-decorate('../img/css.webp', $text-css-color);
+}
+nav.css ul li a{
+    @include menu($text-html-color, white);
+}
+
+ul.menu li{
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    min-width: fit-content;
+    min-height: fit-content +20px;
+
+}
+
+ul.menu{
+    margin: 0;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+    display: contents;
+}
+
+.menu li{
+    display: inline-block;
+    width: auto;
+    min-height: 90px;
+    position: relative;
+    align-content: center;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 10px;
+}
+nav.css ul li a{
+    @include menu($text-css-color, white);
+    color: $text-css-color;
+}

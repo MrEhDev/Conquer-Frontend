@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// Este archivo contiene estilos específicos de la página de inicio.
+// -----------------------------------------------------------------------------
+
+div.container{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1600px;
+    height: 240px;
+    align-items: center;
+    margin-top: 100px;
+    & a article{
+        max-width: 320px;
+        height: 186px;
+        padding-left: 20px;
+        position: relative;
+        & img{
+            max-width: 80px;
+            max-height: 80px;
+        }
+        & h3{
+            font-size: 24px;
+            color: black;
+            margin: 0;
+        }
+        & p{
+            font-size: 18px;
+            color: #909090;
+            margin: 0;
+        }
+    }
+
+    & a:hover{
+        text-decoration: none;
+        & article{
+            background-color: #9b9a7869;
+            border-radius: 40px;
+        }
+        
+        & h3{
+            text-decoration-line: underline;
+        }
+    }
+}

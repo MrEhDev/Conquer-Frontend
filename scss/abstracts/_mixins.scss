@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin nav-box-position{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  max-width: 900px;
+}
+
+@mixin nav-box-decorate($bg-img, $border-color: white){
+    border-radius: 50px;
+    overflow: hidden;
+    border: 6px solid $border-color;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url($bg-img);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.6; /* Ajusta la opacidad del background image */
+        z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
+    }
+}
+
+
+// Mixin para los menus
+@mixin menu($text-color, $border-color, $bg-color: white){
+    display: block;
+    color: $text-color;
+    border-radius: 25px;
+    padding: 15px;
+    position: relative;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: auto;
+    border: 6px solid $border-color;
+    background-color: $bg-color;
+    min-width: 150px;
+    height: 90px;
+    min-width: 150px;
+    max-width: 180px;
+
+    &:hover{
+        color: white;
+        background-color: $text-color;
+    }
+    
+    & strong{
+        font-family: 'Dogica Pixel', Arial, Helvetica, sans-serif;
+        font-size: 1em;
+    }
+}

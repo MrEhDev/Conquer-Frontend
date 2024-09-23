@@ -1,0 +1,10 @@
+@use '../abstracts';
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: abstracts.$text-color;
+  font: normal 125% / 1.4 abstracts.$text-font-stack;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}

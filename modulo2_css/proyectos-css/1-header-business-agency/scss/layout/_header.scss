@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+picture.logo img{
+  margin-top: 0px;
+  max-height: 54px;
+  max-width: 171px;
+  position: relative;
+  top: 33px;
+}
+
+header nav{
+    display: block;
+    position: absolute;
+    right: 160px;
+    top: 46px;
+
+    & ul.menu{
+    list-style: none;
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    padding: 0;
+    font-size: 18px;
+    margin: 0;
+
+        & li a{
+            color: black;
+        }
+    }
+}

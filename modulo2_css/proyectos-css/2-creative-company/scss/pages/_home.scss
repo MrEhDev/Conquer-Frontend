@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+section.menu{
+    background-color: #515DEF;
+    display: flex;
+    align-items: center ;   
+    padding-left: 10%;
+    position: relative;
+    max-width: 60%;
+    justify-content: space-between;
+    padding-right: 9%;
+}
+
+nav.menu ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    justify-content: space-between;
+}
+
+main div.hero{
+    width: 60%;
+    height: 663px;
+    position: relative;
+    padding-left: 10%;
+    padding-top: 33px;
+    background-color: #515DEF;
+
+    & h1{
+        margin: 16px 0 32px 0;
+    }
+    & p{
+        margin: 0;
+    }
+}
+
+picture.hero{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+div.container{
+    max-width: 1120px;
+    display: grid;
+    grid-template-columns: repeat(3, 328px);
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding: 60px 0 35px 76px;
+    gap: 80px;
+    & article{
+        width: 328px;
+        color: black;
+        & p{
+            color: #909090;
+            font-size: 18px;
+            margin: 0;
+        }
+    }
+
+    & a:hover{
+        text-decoration: none;
+        
+        & h3{
+            text-decoration-line: underline;
+        }
+    }
+}
+

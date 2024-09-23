@@ -1,0 +1,173 @@
+@use '../abstracts/mixins';
+// -----------------------------------------------------------------------------
+// Este archivo contiene todos los estilos relacionados con el encabezado del sitio/aplicación.
+// -----------------------------------------------------------------------------
+
+header div{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    & h2{
+        font-size: 36px;
+        font-weight: 600;
+        color: #313131;
+        margin: 33px 0 57px 0;
+        padding: 0;
+        max-width: 225px;
+        height: 54px;
+        & span{
+            color: #9B9A78;
+        }
+    }
+    & nav ul{
+        margin: 44px 0 ;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        width: 494px;
+        justify-content: space-between;
+        @include mixins.mediaquery(1100px){
+            width: 330px;
+        }
+        & li a{
+            color: #313131;
+            font-size: 18px;
+            &:hover{
+                color: #9B9A78;
+                text-decoration: none;
+            }
+        }
+    }
+    & nav.sign{
+        margin-top: 30px;
+        display: flex;
+        position: relative;
+        & div.sign-in a{
+            color: #9B9A78;
+            display: flex;
+            padding: 8px;
+            justify-content: center;
+            align-items: center;
+            max-width: 149px;
+            height: 60px;
+            margin-right: 32px;
+        }
+        & div.sign-up a{
+            color: white;
+            background-color: #9B9A78;
+            display: flex;
+            max-width: 149px;
+            height: 60px;
+            padding: 8px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    & picture a svg{
+        position: relative;
+        margin-top: 15px;
+        margin-right: 34px;
+        right: 0;
+        &:hover{
+        stroke: #9B9A78;
+        }
+    }
+
+}
+
+div.hero{
+    background-image: url("../../img/placeholder.jpg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    height: 560px;
+    position: relative;
+    background-position-x: left;
+    & div.text{
+        width: 716px;
+        height: 419px;
+        background-color: rgba(255,255,255, 0.8);
+        position: relative;
+        top: 71px;
+        left: 72%;
+        transform: translateX(-50%);
+        padding: 24px 20px 54px 46px;
+        & h1{
+            font-family: "Playfair Display", serif;
+            font-size: 56px;
+            line-height: 72px;
+            max-width: 500px;
+            margin: 0;
+            &:before{
+                content: "";
+                position: absolute;
+                width: 72px;
+                height: 8px;
+                border-radius: 2px;
+                background: #9B9A78;
+                left: 555px;
+                top: 65px;
+            }
+        }
+        & p{
+            color: #909090;
+            font-family:'Poppins', Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+            margin: 43px 0 0 0;
+        }
+    }
+}
+
+ul.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 32px;
+    width: 428px;
+    height: 78px;
+    list-style-image: url(../../img/check.svg);
+    position: relative;
+    top: 80px;
+    left: 70%;
+    transform: translateX(-20%);
+    & li{
+        color: #313131;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+}
+
+div.hero:before{
+    content: "";
+    width: 453px;
+    height: 453px;
+    border-radius: 453px;
+    border: 80px solid #9B9A78;
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: -350px;
+    z-index: -1;
+    opacity: 0.05;
+}
+
+div.container:before{
+    content: "";
+    width: 320px;
+    height: 320px;
+    border-radius: 320px;
+    border: 64px solid #9B9A78;
+    display: block;
+    position: absolute;
+    top: 1000px;
+    left: 210px;
+    z-index: -1;
+    opacity: 0.05;
+}

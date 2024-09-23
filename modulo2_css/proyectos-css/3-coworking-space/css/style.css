@@ -1,0 +1,724 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | Licencia MIT | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+* 1. Corregir la altura de línea en todos los navegadores.
+* 2. Evitar ajustes del tamaño de fuente después de cambios de orientación en iOS.
+*/
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+* Eliminar el margen en todos los navegadores.
+*/
+body {
+  margin: 0;
+}
+
+/**
+* Representar el elemento `main` de forma coherente en IE.
+*/
+main {
+  display: block;
+}
+
+/**
+* Corregir el tamaño de fuente y el margen de los elementos `h1` dentro de los contextos `section` y
+* `article` en Chrome, Firefox y Safari.
+*/
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Agrupar contenido
+================================================================================ */
+/**
+* 1. Agrega el tamaño de cuadro correcto en Firefox.
+* 2. Muestra el desbordamiento en Edge e IE.
+*/
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+* 1. Corrige la herencia y el escalado del tamaño de fuente en todos los navegadores.
+* 2. Corrige el tamaño de fuente "em" impar en todos los navegadores.
+*/
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Semántica a nivel de texto
+================================================================================== */
+/**
+* Eliminar el fondo gris de los enlaces activos en IE 10.
+*/
+a {
+  background-color: transparent;
+}
+
+/**
+* 1. Eliminar el borde inferior en Chrome 57-
+* 2. Agregar la decoración de texto correcta en Chrome, Edge, IE, Opera y Safari.
+*/
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+* Agregue el peso de fuente correcto en Chrome, Edge y Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+* 1. Corrija la herencia y el escalado del tamaño de fuente en todos los navegadores.
+* 2. Corrija el tamaño de fuente impar `em` en todos los navegadores.
+*/
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+* Agregue el tamaño de fuente correcto en todos los navegadores.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+* Evite que los elementos `sub` y `sup` afecten la altura de línea en
+* todos los navegadores.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Contenido incrustado
+=================================================================================== */
+/**
+* Eliminar el borde de las imágenes dentro de los enlaces en IE 10.
+*/
+img {
+  border-style: none;
+}
+
+/* Formularios
+================================================================================ */
+/**
+* 1. Cambie los estilos de fuente en todos los navegadores.
+* 2. Elimine el margen en Firefox y Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+* Mostrar el desbordamiento en IE.
+* 1. Mostrar el desbordamiento en Edge.
+*/
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+* Eliminar la herencia de la transformación de texto en Edge, Firefox e IE.
+* 1. Eliminar la herencia de la transformación de texto en Firefox.
+*/
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+* Corregir la imposibilidad de aplicar estilo a los tipos en los que se puede hacer clic en iOS y Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+* Eliminar el borde interior y el relleno en Firefox.
+*/
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+* Restaurar los estilos de enfoque que no se establecieron con la regla anterior.
+*/
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+* Corregir el relleno en Firefox.
+*/
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+* 1. Corrija el ajuste de texto en Edge e IE.
+* 2. Corrija la herencia de color de los elementos `fieldset` en IE.
+* 3. Elimine el relleno para que los desarrolladores no se vean sorprendidos cuando pongan en cero
+* los elementos `fieldset` en todos los navegadores.
+*/
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+* Agregue la alineación vertical correcta en Chrome, Firefox y Opera.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+* Elimine la barra de desplazamiento vertical predeterminada en IE 10+.
+*/
+textarea {
+  overflow: auto;
+}
+
+/**
+* 1. Agregue el tamaño de cuadro correcto en IE 10.
+* 2. Elimine el relleno en IE 10.
+*/
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+* Corrija el estilo del cursor de los botones de incremento y decremento en Chrome.
+*/
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+* 1. Corrija la apariencia extraña en Chrome y Safari.
+* 2. Corrija el estilo del contorno en Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+* Elimine el relleno interno en Chrome y Safari en macOS.
+*/
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+* 1. Corrija la imposibilidad de aplicar estilo a los tipos en los que se puede hacer clic en iOS y Safari.
+* 2. Cambie las propiedades de fuente a `inherit` en Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactivo
+=============================================================================== */
+/*
+* Agrega la visualización correcta en Edge, IE 10+ y Firefox.
+*/
+details {
+  display: block;
+}
+
+/*
+* Agrega la visualización correcta en todos los navegadores.
+*/
+summary {
+  display: list-item;
+}
+
+/* Misc
+================================================================================= */
+/**
+* Agrega la visualización correcta en IE 10+.
+*/
+template {
+  display: none;
+}
+
+/**
+* Agrega la visualización correcta en IE 10.
+*/
+[hidden] {
+  display: none;
+}
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+* Hacer que todos los elementos del DOM hereden del valor de box-sizing padre
+* Dado que `*` tiene una especificidad de 0, no anula el valor de `html`
+* Hacer que todos los elementos hereden del valor de box-sizing raíz
+* Ver: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: rgb(229, 0, 80);
+  text-decoration: none;
+}
+a:hover, a:active, a:focus, a:focus-within {
+  color: rgb(34, 34, 34);
+  text-decoration: underline;
+}
+
+.page {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.poppins-thin {
+  font-family: "Poppins", system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", system-ui;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", system-ui;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", system-ui;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", system-ui;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", system-ui;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", system-ui;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", system-ui;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display-hero {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/**
+* Ocultar texto y hacerlo legible para lectores de pantalla
+* 1. Necesario en navegadores basados ​​en WebKit debido a un error de implementación;
+* Ver: https://code.google.com/p/chromium/issues/detail?id=457146
+*/
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+* Ocultar elemento y hacerlo legible para lectores de pantalla
+* Tomado prestado descaradamente de HTML5Boilerplate:
+* https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+*/
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: rgb(34, 34, 34);
+  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+header div {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+header div h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #313131;
+  margin: 33px 0 57px 0;
+  padding: 0;
+  max-width: 225px;
+  height: 54px;
+}
+header div h2 span {
+  color: #9B9A78;
+}
+header div nav ul {
+  margin: 44px 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  width: 494px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1100px) {
+  header div nav ul {
+    width: 330px;
+  }
+}
+header div nav ul li a {
+  color: #313131;
+  font-size: 18px;
+}
+header div nav ul li a:hover {
+  color: #9B9A78;
+  text-decoration: none;
+}
+header div nav.sign {
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+}
+header div nav.sign div.sign-in a {
+  color: #9B9A78;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  max-width: 149px;
+  height: 60px;
+  margin-right: 32px;
+}
+header div nav.sign div.sign-up a {
+  color: white;
+  background-color: #9B9A78;
+  display: flex;
+  max-width: 149px;
+  height: 60px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+}
+header div picture a svg {
+  position: relative;
+  margin-top: 15px;
+  margin-right: 34px;
+  right: 0;
+}
+header div picture a svg:hover {
+  stroke: #9B9A78;
+}
+
+div.hero {
+  background-image: url("../img/placeholder.jpg");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  height: 560px;
+  position: relative;
+  background-position-x: left;
+}
+div.hero div.text {
+  width: 716px;
+  height: 419px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  top: 71px;
+  left: 72%;
+  transform: translateX(-50%);
+  padding: 24px 20px 54px 46px;
+}
+div.hero div.text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  line-height: 72px;
+  max-width: 500px;
+  margin: 0;
+}
+div.hero div.text h1:before {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 8px;
+  border-radius: 2px;
+  background: #9B9A78;
+  left: 555px;
+  top: 65px;
+}
+div.hero div.text p {
+  color: #909090;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 43px 0 0 0;
+}
+
+ul.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 32px;
+  width: 428px;
+  height: 78px;
+  list-style-image: url(../img/check.svg);
+  position: relative;
+  top: 80px;
+  left: 70%;
+  transform: translateX(-20%);
+}
+ul.hero li {
+  color: #313131;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+div.hero:before {
+  content: "";
+  width: 453px;
+  height: 453px;
+  border-radius: 453px;
+  border: 80px solid #9B9A78;
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: -350px;
+  z-index: -1;
+  opacity: 0.05;
+}
+
+div.container:before {
+  content: "";
+  width: 320px;
+  height: 320px;
+  border-radius: 320px;
+  border: 64px solid #9B9A78;
+  display: block;
+  position: absolute;
+  top: 1000px;
+  left: 210px;
+  z-index: -1;
+  opacity: 0.05;
+}
+
+div.container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1600px;
+  height: 240px;
+  align-items: center;
+  margin-top: 100px;
+}
+div.container a article {
+  max-width: 320px;
+  height: 186px;
+  padding-left: 20px;
+  position: relative;
+}
+div.container a article img {
+  max-width: 80px;
+  max-height: 80px;
+}
+div.container a article h3 {
+  font-size: 24px;
+  color: black;
+  margin: 0;
+}
+div.container a article p {
+  font-size: 18px;
+  color: #909090;
+  margin: 0;
+}
+div.container a:hover {
+  text-decoration: none;
+}
+div.container a:hover article {
+  background-color: rgba(155, 154, 120, 0.4117647059);
+  border-radius: 40px;
+}
+div.container a:hover h3 {
+  text-decoration-line: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
